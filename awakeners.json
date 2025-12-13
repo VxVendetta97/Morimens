@@ -31,6 +31,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.24's CON, ATK, and DEF stats increase by (3% per talent level).After using 24's Rouse, gain (50 per talent level) Keyflare.24's Base DMG +17%(+3% per talent level). Final DMG dealt to \"Sculptor's Association\" enemies +13%(+2% per talent level)."
+        },
+        "enlightens": {
+            "E1": "[Hysteria] Enlighten 1 [Frenzied Slash]: Increases Base DMG by 33%. In Depressed Persona, reduce the Arithmetica Cost of the card by 1 more. In Manic Persona, deal 1 additional damage instance.",
+            "E2": "[Restraint Bonds] Enlighten 2 [Symbiotic Abberation]: Gain 2 more Aliemus. In Depressive Persona, inflict 1 turn of Weakness on all enemies. In Manic Persona, inflict 1 turn of Vulnerable on all enemies.",
+            "E3": "[Pavlovian Conditioning Study] Enlighten 3 At the end of the turn, 24 gains 10 Aliemus. Each time 24 uses Exalt, the Aliemus gained from the previous effect increases by 1."
         }
     },
     {
@@ -65,6 +70,11 @@
             "T1": "Innate: Seal of the Pact Talent For every 1% Sigil Yield Agrippa has, [Pale Blessing] gains 0.5% increased Base Shield and inflicts 1% increased Base Poison.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Agrippa's CON, ATK, and DEF stats increase by (3% per talent level).After using Agrippa's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[The Usurper] Enlighten 1 [Reluctant Alms]: Reduces the Arithmetica Cost of the highest cost Command Card in hand by 1 until the end of this turn.",
+            "E2": "[Ashes and Skulls] Enlighten 2 [Strike] and [Defend]: Triggers 10% of Poison on all enemies.",
+            "E3": "[Spider Queen's Kiss] Enlighten 3 [Colorless Spiral]: Base damage increased by 50%. Grants +20% Embryo Fusion."
         }
     },
     {
@@ -99,6 +109,11 @@
             "T1": "Innate: None. Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Aigis's CON, ATK, and DEF stats increase by (3% per talent level).After using Aigis's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[The Witness] Enlighten 1 [Strike]: For each stack of Vulnerable on the target, Embryo Fusion +5%, up to 30%.",
+            "E2": "[Sugary Aroma] Enlighten 2 [Decomposition]: For each stack of Vulnerable on the target, final DMG +5%, up to 500%.",
+            "E3": "[Nightborne Wings] Enlighten 3 When Devour is triggered, return [A Small Wish] from the Discard Pile to your hand and set its Arithmetica Cost to 0."
         }
     },
     {
@@ -133,6 +148,11 @@
             "T1": "Innate: Dynamic Vision Talent For every 1% of Death Resistance Alva has, the Base DMG of [Strike] and [Precision Slash] is increased by 0.5%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Alva's CON, ATK, and DEF stats increase by (3% per talent level).After using Alva's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Unyielding Bastion] Enlighten 1 [Combat Stance]: Is now considered a [Defend] card. Shield amount gained from being retained is doubled.",
+            "E2": "[Relentless Fighter] Enlighten 2 [Endless Justice]: Draws an additional card.",
+            "E3": "[All for Justice] Enlighten 3 [Endless Justice]: Increases Alva's Crit Rate and Crit DMG +50% for her next attack this battle."
         }
     },
     {
@@ -167,6 +187,11 @@
             "T1": "Innate: Happy Little Fairy Talent For every point of Aliemus Regen Aurita has, gain Tentacle DMG equal to 1% of Aurita's ATK at the start of battle.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Aurita's CON, ATK, and DEF stats increase by (3% per talent level).After using Aurita's Rouse, gain (50 per talent level) Keyflare.For every [Gland Division] consumed by [Clamorous Ocean], Aurita's DMG increases by 2.5% (+0.5% per talent level) ATK. When at least 20 [Gland Division] cards are consumed in a Boss Battle, [Gland Division] deals an additional instance of DMG when played or consumed."
+        },
+        "enlightens": {
+            "E1": "[Bubbling Journey] Enlighten 1 [Power of Friendship]: Draw 1 more card.",
+            "E2": "[Slick-Slide Adventure] Enlighten 2 [Gland Division] and [Clamorous Ocean]: Base DMG is increased by 100%. Now deals Pierce DMG.",
+            "E3": "[Let's All Have Fun Together!] Enlighten 3 Every 3 turns, add 1 [Gland Division] with Exhaust and Void.[Defend]: Draws 1 card."
         }
     },
     {
@@ -201,6 +226,11 @@
             "T1": "Innate: Rebellious Spikes Talent For every 1% Sigil Yield Caecus has, his [Strike] gains an additional 1% counter damage bonus.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Caecus's CON, ATK, and DEF stats increase by (3% per talent level).After using Caecus's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Bloodline Awaken] Enlighten 1 [Shattered Halberd]: Caecus gains (15/16/17/18/19/20) Aliemus (effect scales with skill level of [Shattered Halberd]).",
+            "E2": "[Spike Amalgamation] Enlighten 2 [Protective Scales]: Shield Generation +20%. Adds Retain.",
+            "E3": "[Outcast's Anguish] Enlighten 3 Heal HP equal to 7.5% of CON at the end of the turn."
         }
     },
     {
@@ -235,6 +265,11 @@
             "T1": "Innate: Master of Magic Talent For every 1 Realm Mastery Casiah has, [Magic Carnival] additionally increases her base damage by 0.2%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Casiah's CON, ATK, and DEF stats increase by (3% per talent level).After using Casiah's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Mind's Whisper] Enlighten 1 [Poof!]: Casiah gains 3 Aliemus for every card shuffled.",
+            "E2": "[Veil of Illusion] Enlighten 2 [Magical Carnival]: Draw an additional card. Drawing a Symptom or State card will also trigger the additional instance of DMG.",
+            "E3": "[Legendary Copycat] Enlighten 3 [Telekinesis]: Is now considered a \"Strike\" Card. Improved Leap effect. Leap: Deals an additional instance of DMG."
         }
     },
     {
@@ -270,6 +305,11 @@
             "T1": "Cleansing Feathers Talent Max level: 1 Playing \"Onyx Plume\" for the first time each turn inflicts 840% of Castor's ATK as \"Corrosion\" on the target and gives Castor 10 Aliemus. For every 1% of DMG Amplification Castor has, the Base amount of \"Corrosion\" inflicted increases by 1%. After the battle, \"Corrosion\" inflicted by Castor permanently increases by 20% during this Exploration. \"Corrosion\" inflicted in Boss Battles doubles. After inflicting \"Corrosion\", Castor's DMG output increases by 5% of the amount of \"Corrosion\" inflicted this turn. DMG dealt by Castor does not remove \"Corrosion\".",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in the \"Astral Reign\" stages. Castor's CON, ATK, and DEF are increased by (3% per talent level). After using Castor's Rouse, gain (50 per talent level) Keyflare.Playing \"Onyx Plume\" will not add Arithmetica Harmony. Corrosion inflicted with \"Cleansing Feathers\" is increased by 200 (+20% per talent level)% of Castor's ATK."
+        },
+        "enlightens": {
+            "E1": "[Caged Underground] Enlighten 1 At the start of battle, place 1 \"Onyx Plume\" into your hand.",
+            "E2": "[Unyielding Will] Enlighten 2 For every \"Onyx Plume\" in hand, playing \"Stygian Wings\" grants 5 Aliemus. For every \"Onyx Plume\" played, the Arithmetica Cost of \"Umbral Flight\" is reduced by 1 this turn.",
+            "E3": "[Sky-Eclipsing Wings] Enlighten 3 For every 3 \"Onyx Plume\" played, gain 1 Arithmetica and increase Castor's Final DMG by 10% this battle."
         }
     },
     {
@@ -304,6 +344,11 @@
             "T1": "Innate: Voyage Horn Talent For every 1 point of Realm Mastery Celeste has, there is a 0.3% chance to trigger one tentacle attack when playing her Command Cards.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Celeste's CON, ATK, and DEF stats increase by (3% per talent level).After using Celeste's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Solitary Mast Enlighten 1 [Everlasting Phantasm]: Gains Retain. Healing effect increased by 20%.",
+            "E2": "[Ancestral Beacon] Enlighten 2 [Tintless Dream]: Gains Retain. For each round retained, the healing done is increased by (10/12/14/16/18/20)% of CON (effect scales with the level of [Tintless Dream]).",
+            "E3": "[Beyond Joy and Sorrow] Enlighten 3 [Undying Bird of Paradise]: When the revive effect is triggered, all Awakeners gain 25 Aliemus. After triggering. the revive effect can now be reapplied after 6 turns."
         }
     },
     {
@@ -338,6 +383,11 @@
             "T1": "Innate: Hive Resonance Talent Max level: 1 Gain 1 stack of \"Symbiosis\" after dealing DMG with Clementine's Command Cards. For every 1Keyflare Regen Clementine has, she gains 0.35% Crit Rate and Crit DMG.On the start of Ultra Round, remove all enemies Psychic Trauma and Phobic Fixation. For each stack of Psychic Trauma removed, gain 50 Keyflare. For every stack of Phobic Fixation removed, other Awakaners gain 2 Aliemus.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Clementine's CON, ATK, and DEF stats increase by (3% per talent level).After using Clementine's Rouse, gain (50 per talent level) Keyflare.STR gained by all Awakers is increased by 5% (+1% per talent level).When Clementine deals DMG to \"Insectoid\" enemies, she applies Bleed equal to 50% (+5% per talent level) of the damage dealt.The first time each round Clementine provides a Shield or heals, \"Insectoid\" enemies lose STR equal to 20% (+1% per talent level) of Clementine's DEF for 1 turn."
+        },
+        "enlightens": {
+            "E1": "[Knocking on Mind's Portal] Enlighten 1 Gain 5 stacks of \"Symbiosis\" at the start of battle. Base DMG of [Lifeform Reconstruction] increases by 20%.",
+            "E2": "[Soul Healing Journey] Enlighten 2 [Lifeform Reconstruction] gains 200% of Clementine's Keyflare Regen as Keyflare.For each stack of \"Symbiosis\" consumed, increase Clementine's Base DMG by 3% for the rest of battle. At the end of each battle, Clementine's Base DMG increases by 25%.",
+            "E3": "[You Will Recover] Enlighten 3 At the end of turn, gain 2 stacks of \"Symbiosis\".The stack limit for \"Symbiosis\", \"Psychic Trauma\", and \"Phobic Fixation\" is increased to 15."
         }
     },
     {
@@ -373,6 +423,11 @@
             "T1": "Innate: Cinders Talent For every 1% of Death Resistance Corposant has, increase her Base DMG by 0.2% and her Shields by 0.05%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Corposant's CON, ATK, and DEF stats increase by (3% per talent level).After using Corposant's Rouse, gain (50 per talent level) Keyflare.At the start of battle, enemies take 5% (+1% per talent level) more Tentacle DMG. This effect is doubled on \"Aequor\" enemies.[Lightning Retribution] deals 50% (+5% per talent level) more damage to \"Aequor\" enemies."
+        },
+        "enlightens": {
+            "E1": "[Lodestar's Whisper] Enlighten 1 [Strike] and [Defense]: Aliemus gained is increased by 5. Gain Aftershock effect. Aftershock: The next time this card is used, Aliemus gained increased by 5. This effect can stack 2 times.",
+            "E2": "[Sextant's Calculation] Enlighten 2 [Ominous Semaphore]: Inflicts 1 turn of Weakness to all enemies. For each Tentacle present, [Pilot's] Shield, STR gain, and Tentacle DMG gain increase by 5% (max 50%).",
+            "E3": "[Willing Sacrifice] Enlighten 3 [To Sail the Sundered Tides]: Inflcits 1 turn of Vulnerable to all enemies. Team gains temporary Crit DMG +20%. This amount increases by 10% each time Death Resistance is triggered this battle."
         }
     },
     {
@@ -407,6 +462,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soul Shaping Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Daffodil's CON, ATK, and DEF stats increase by (3% per talent level).After using Daffodil's Rouse, gain (50 per talent level) Keyflare.When \"Ashen Ruins\" is refreshed, the chance for a discount is increased by 5% and the discount rate is increased by (1% per talent level)"
+        },
+        "enlightens": {
+            "E1": "[Infinite Passage] Enlighten 1 [Strike]: STR has 2 times effectiveness on this card. Gains Leap effect. Leap: Gain 1 Arithmetica.[Defend]: Gain (1/1.2/1.4/1.6/1.8/2% ATK) STR. Gains Leap effect. Leap: Gain 1 Arithmetica.",
+            "E2": "[Mist of Avarice] Enlighten 2 When Daffodil kills an enemy by any means, the team's Crit Rate is increased by 5% for the exploration.",
+            "E3": "[Essence Sediment] Enlighten 3 Every time an [Insight] card is played, Daffodil gains 2 Aliemus and gain STR equal to 15% of ATK. This effect can activate up to 5 times per turn."
         }
     },
     {
@@ -441,6 +501,11 @@
             "T1": "Innate: Gnosis Reconstruction Talent For every 1 point of Aliemus Regen Doll has, the HP Recovery of [Outer Surgery] and [Equivalent Exchange] is increased by 0.5%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Doll's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Doll's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Pure Rationality] Enlighten 1 [Outer Surgery]: Weakness applied lasts 2 turns instead of 1. Healing increased by 33%.",
+            "E2": "[Beyond Death] Enlighten 2 [Equivalent Exchange]: Base HP recovery and discard HP recovery increased by 20%. Gain shield equal to the amount of healing from cards discarded when used.",
+            "E3": "[Flesh Transcended] Enlighten 3 [Reationality, Truth, and Reality]: Healing increased by 25%. Aliemus gain also applies to Doll."
         }
     },
     {
@@ -476,6 +541,11 @@
             "T1": "Innate: Casket Harvest Talent Max level: 1 Doresain gains 1 stack of \"Corpse\" after killing an enemy or dealing Exalt DMG to a Boss (max 3 stacks). Stacks are retained throughout the exploration.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages. Doresain's CON, ATK, and DEF stats increase by (3% per talent level). After the first time using Doresain's Rouse, gain (50 per talent level) Keyflare.All Awakeners in your team gain 4% (+1% per talent level) more STR. When Doresain kills \"Departed\" enemies, he gains 30 (+2 per talent level) Aliemus."
+        },
+        "enlightens": {
+            "E1": "[Feast's Overture] Enlighten 1 For every 1% Crit DMG Doresain has, increase his Crit Rate by 0.1%.",
+            "E2": "[Hollow Whispers] Enlighten 2 For every 1% HP missing, Doresain's Command Cards, Base DMG, Shield, and Aliemus Gen +1%.",
+            "E3": "[Evernight's Revel] Enlighten 3 Place 1 [Evernight's Revel] into hand whenever Doresain obtains \"Corpse\"."
         }
     },
     {
@@ -511,6 +581,11 @@
             "T1": "Innate: External Power Source Talent For every 1 point of Keyflare Regen Erica has, [Electromagnetic Blast] grants Erica 0.5% Temporary Crit Rate and Crit DMG.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Erica's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Erica's Rouse, gain (50 per talent level) Keyflare.At the start of battle, gain STR equal to 5% (+1% per talent level) of Erica's ATK and Alert equal to 1% (+0.2% per talent level) of Erica's DEF."
+        },
+        "enlightens": {
+            "E1": "[Auto-Rectification] Enlighten 1 [Unleash: Mecha] creates 1 Erica [Strike] Command Card with Exhaust and adds it to your hand.[Retract: Mecha] creates 1 Erica [Defend] Command Card with Exhaust and adds it to your hand.",
+            "E2": "[Force Circuit] Enlighten 2 [Electromagnetic Blast] DMG benefits from STR 2x. [Electromagnetic Blast] Shield benefits from Alert 2x.",
+            "E3": "[System Reboot] Enlighten 3 [Function Overload] gains Leap: Applies both DMG and Shield effects simultaneously."
         }
     },
     {
@@ -545,6 +620,11 @@
             "T1": "Innate: Secondary Swaddle Talent For every 1% Death Resistance Faint has, increase the Counter gained by [Cradle of Stars] and [Boundless Starlight] by 0.2% and increase the minimum Death Resistance condition of [Cradle of Stars] by 2%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Faint's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Faint's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Binary Stars] Enlighten 1 [Strike] deals DMG twice.If Death Resistance has been triggered this battle, gain temporary Counter equal to 50% of the damage dealt.",
+            "E2": "[Withering Hymn] Enlighten 2 [Defend] shield gained is increased by 25%.Gain Counter equal to the shield gained.",
+            "E3": "[Cradle of Love] Enlighten 3 Each time Death Resistance is triggered, deal Fixed DMG equal to 100% of your Counter to the front row enemy. Each time Death Resistance is triggered in this battle, the Fixed DMG increases by 25% of your Counter."
         }
     },
     {
@@ -579,6 +659,11 @@
             "T1": "Innate: Homesick Talent For every 1% DMG Amplification Faros has, the Shield gained from [Lost City of Lemuria] is increased by 0.3%",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Faros's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Faros's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Jagged Shore] Enlighten 1 [Ocean of Elation] gains bonus DMG equal to 100% of Tentacle DMG.",
+            "E2": "[Congealed Ambergris] Enlighten 2 Faros' [Strike] and [Defend] Command Cards commands 1 Tentacle to attack once.",
+            "E3": "[Flickering Candle] Enlighten 3 At the end of each turn, for each card in hand, trigger 2% Poison on all enemies and gain 2 Aliemus."
         }
     },
     {
@@ -614,6 +699,11 @@
             "T1": "Innate: Path of Annihilation Talent In Boss Battles, at the start of your turn or after Doll: Inferno activates her Exalt, gain 1 stack of \"Finale\". \"Finale\" has a maximum of 10 stacks. When Finale reaches 10 stacks, add 1 [Illusion's End] to your hand.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Doll: Inferno's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Doll: Inferno's Rouse, gain (50 per talent level) S-Energy.After Exploration begins, all Awakener's Poison, Counter, and Base DMG increases by 5%(+1% per talent level)."
+        },
+        "enlightens": {
+            "E1": "[Borealis Visitor] Enlighten 1 [Self-Destruct Transformation] applies 1 turn of Vulnerable to all enemies when \"Elation\" is chosen, and applies 1 turn of Weakness to all enemies when \"Curse\" is chosen.",
+            "E2": "[Resonant Mycelium] Enlighten 2 [Terminal, Gateway of Truth and Abyss] and [Fate's Descent] inflict 50% increased Base Poison, with an additional 15% for each stack of \"Finale\".\"Finale\" stack limit removed.",
+            "E3": "[Envoy of Extinction] Enlighten 3 [Strike] and [Defend] grant additional Aliemus equal to 5% of max Aliemus.[Illusion's End] fixed DMG increased from 25% to 30%. Additionally, it heals 30% of your missing HP."
         }
     },
     {
@@ -650,6 +740,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Helot: Catena's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Helot: Catena's Rouse, gain (50 per talent level) Keyflare.STR has 100% (+30% per talent level) effectiveness on [Sanguine Fetters]."
+        },
+        "enlightens": {
+            "E1": "[Endless Slaughter] Enlighten 1 [Strike] grants Helot: Catena an additional 15% Crit Rate and Crit DMG for 1 turn.[Defend] immediately activates 15% of Bleed DMG.",
+            "E2": "[Vengeance Unchained] Enlighten 2 [Hatred Unleashed]: If HP is below 50%, the STR gained is doubled.[Bloodthirsty Flail]: Prepare is now Prepare 2.",
+            "E3": "[Remnant's Requiem] Enlighten 3 At the start of battle, add 1 [Irregular Form: Chains] to your hand.[Sanguine Fetters]: Remove's the enemies shield on hit and the enemy can not gain a shield higher than 1 until the end of their turn."
         }
     },
     {
@@ -684,6 +779,11 @@
             "T1": "Innate: Silverheart Resonance Talent Ramona gains an additional 2.5 points of Keyflare Regen. Each Affinity level grants an additional 0.5 Keyflare Regen.For each point of Keyflare Regen, the Loop effect of \"Strike\" grants Ramona: Timeworn an additional 0.2% critical rate and the Loop effect of [Defend] grants Ramona: Timeworn an additional 0.2 Aliemus.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Ramona: Timeworn's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Ramona: Timeworn's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Penrose Pilgrim] Enlighten 1 Gain 1 Negentropy at the end of your turn.",
+            "E2": "[Klein Bottle Voyager] Enlighten 2 Each time you use a Posse, Ramona: Timeworn gains 25% temporary Crit Rate and Crit Damage.",
+            "E3": "[Mobius Captive] Enlighten 3 After using Ramona: Timeworn's Exalt, select a currently unlocked Posse to replace the current one (you can select the currently used Posse). The selected Posse reverts back to the original after use or at the end of the battle."
         }
     },
     {
@@ -719,6 +819,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Goliath's CON, ATK, and DEF stats increase by (3% per talent level).After using Goliath's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Death is Rebirth] Enlighten 1 \"Decapitation Damage\" gains a STR buff that doubles for each Tentacle.",
+            "E2": "[Rule by the Strongest] Enlighten 2 \"Law of the Strongest\" now steals all enemy STR buffs until the the start of your next turn.",
+            "E3": "[Boundless Ambition] Enlighten 3 \"Abyssal Deapths' Power\" grants Goliath 25% Temporary Crit Rate when choosing \"Usurp\", or 25 Aliemus when choosing \"Dormancy\"."
         }
     },
     {
@@ -754,6 +859,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Hameln's CON, ATK, and DEF stats increase by (3% per talent level).After using Hameln's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Mind Concerto] Enlighten 1 Hameln's \"Strike\" and \"Defend\" cards grant Temporary STR equal to 10% of ATK.If the card triggers one of Hameln's \"Melody\" effects, the Temporary STR gained is doubled.",
+            "E2": "[Oneiric Waltz] Enlighten 2 \"Rondino\" also reduces the Arithmetica cost of the card by 2.",
+            "E3": "[Moonlit Rhapsody] Enlighten 3 Triggering Hameln's \"Melody\" effect or playing [Symphony of Harmony] grants Hameln 1% Crit Rate and Crit DMG.Every 10 times this is triggered, the damage instances of [Soul Overture] and [Primal Chord] is increased by 1 for the rest of the battle, up to 2 times."
         }
     },
     {
@@ -788,6 +898,11 @@
             "T1": "Innate: Pain Sigil Talent For every 1% of DMG Amplification Helot has, [Surviving Impasse] also increases Helot's damage this turn by 0.3%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Helot's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Helot's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Regent's Heir] Enlighten 1 At the start of the battle, add 1 [Irregular Form] to your hand.",
+            "E2": "[Sacred Half] Enlighten 2 Playing Helot's \"Defense\" grants her 25% temporary Crit Rate.",
+            "E3": "[The Chainbreaker] Enlighten 3 Playing Helot's \"Strike\" grants her 5% Crit DMG."
         }
     },
     {
@@ -822,6 +937,11 @@
             "T1": "Innate: Writing with Feeling Talent When Horla activates a Leap effect with her Command Card, her Emotion changes to the corresponding Emotion associated with that card. Each Emotion has a team-wide buff that is active while Horla remains in that emotion. Each Emotion's effects will be listed under their associated Command Card. Anger: Associated with \"Threnody of Delirium\". Grief: Associated with \"Threnody of Sorrow\". Happiness: Associated with \"Threnody of Dreams\". Fear: Associated with \"Threnody of Shadows\".For every 1% of Death Resistance Horla has, the initial values of the bonus effect from these Emotions is increased by 0.1%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Horla's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Horla's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Emberbound] Enlighten 1 \"Threnody of Delirium\" applies 1 Vulnerable to all enemies. \"Threnody of Sorrow\" applies 1 Weakness to all enemies.",
+            "E2": "[Chamber of Shadows] Enlighten 2 All of Horla's Command Cards gain Retain.",
+            "E3": "[Blossoms and Verses Reunited] Enlighten 3 The first time a Horla Command Card is played she gains 10 Aliemus.The effect corresponding to \"Resplendent Chapters\" increases from 150% to 250%."
         }
     },
     {
@@ -857,6 +977,11 @@
             "T1": "Innate: A Common Enemy Talent For every 1% Crit Rate Jenkins has, the Base DMG of \"Strike\" and \"Get 'em! Brown!\" is increased by 2%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Jenkins's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Jenkins's Rouse, gain (50 per talent level) Keyflare.The first 10 \"Get 'em! Brown!\" cards played each round will not count towards Arithmetica Harmony.Jenkins' DMG is increased by 20(+4 per talent level)% of her ATK."
+        },
+        "enlightens": {
+            "E1": "[Red Ribbon] Enlighten 1 For each use of \"Get 'em! Brown!\" this battle, increases the Base DMG of \"Swarm Impact\" by an amount equal (2.5/3/3.5/4/4.5/5)% of ATK (the effect scales with the level of \"Get 'em! Brown!\").",
+            "E2": "[Golden Butterfly's Memories] Enlighten 2 \"Basic Defense\" draws 2 cards; if the cards drawn aren't Jenkin's, discard them.",
+            "E3": "[Obsidian Dissolution] Enlighten 3 \"Mistborn Street Urchin\" adds 1 extra \"Get 'em! Brown!\" to your hand."
         }
     },
     {
@@ -892,6 +1017,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Karen's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Karen's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Maid's Decree] Enlighten 1 \"Silent Fealty\" maximum stack count increased to 3.",
+            "E2": "[Creamy Frosting] Enlighten 2 \"Toad Stew\" Poison application and HP recovery effects increased by 25%.",
+            "E3": "[Fermented Recipes] Enlighten 3 \"Marvelous Cuisine\" has a 50% chance to trigger a random Marvelous Effect when being played. Random Effects: Karen gains 10 Aliemus. All allies gain 5 Aliemus. Apply 1 Vulnerable to all enemies. Apply 1 Weakness to all enemies. Draw 1 card. Gain 200 Keyflare."
         }
     },
     {
@@ -899,9 +1029,9 @@
         "faction": "CHAOS",
         "type": "ATTACK",
         "stats": {
-            "CON": "124(+1.5)*",
-            "ATK": "148",
-            "DEF": "112",
+            "CON": "33/124(+1.5)*",
+            "ATK": "39/148",
+            "DEF": "30/112",
             "CritRate": "5.8%",
             "CritDamage": "52.4%",
             "AliemusRegen": "0",
@@ -927,6 +1057,11 @@
             "T1": "Lord of Explosions Talent Max level: 1 At the start of the turn, randomly apply 1 stack of Fiamma to a randomly selected Kathigu-Ra Command Card in hand. For each stack of Fiamma consumed by Kathigu-Ra, gain 1 stack of Combust. When Combust reaches 10 stacks, gain 2 Arithmetica and transforms all [Solarflare] Command Cards into [Hyperflare].",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages. Kathigu-Ra's CON, ATK, and DEF stats increase by (3% per talent level). After using Kathigu-Ra's Rouse, gain (50 per talent level) Keyflare.Fiamma's buff effects are increased by 10%. At the start of each turn AND before cards are discarded at the end of the turn, clear all Burn from cards in hand. Kathigu-Ra gains 1 stack of Combust for each stack of Burn cleared."
+        },
+        "enlightens": {
+            "E1": "[Everburning Flame] Enlighten 1 The Base DMG, Shield provided, and Aliemus gained by [Strike] and [Defend] are increased by 50%.",
+            "E2": "[Astral Meltdown] Enlighten 2 When [Solarflare] has 3 stacks of Fiamma, its Base DMG increases by 50%. When [Last Stand Salvo] has 3 stacks of Fiamma, the STR gained increases by 3% of Kthigu-Ra's ATK.",
+            "E3": "[Endless Purgatory] Enlighten 3 At the start of the battle, apply 1 stack of Fiamma to all of Kathigu-Ra's default Command Cards. For each stack of Combust gained, Kathigu-Ra's Base DMG increases by 5% for this battle."
         }
     },
     {
@@ -961,6 +1096,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Leigh's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Leigh's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Newborn Sanguivore] Enlighten 1 \"Pain and Pleasure\" deals Pierce DMG and gains Retain.",
+            "E2": "[Step into the Sunlight] Enlighten 2 \"Pain of Unfulfilled Desires\" grants Leigh 10 Aliemus.",
+            "E3": "[Basement Journal] Enlighten 3 When \"Flatter's Embrace\" triggers Devour, the Strength gained is doubled."
         }
     },
     {
@@ -995,6 +1135,11 @@
             "T1": "Innate: Surging Darkness Talent For every 1% of Death Resistance Lily has, increase the base shield of [Defend] and [Forbidden Swamp] by 0.25%, and increase the Endure stack limit in boss battles by 0.25%.When Lily is in the team, gain 1 Endure stack for every HP lost, with a maximum stack equal to 100% of your max HP.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Lily's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Lily's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Blackened Nourishment] Enlighten 1 If HP is below 50%, \"Forbidden Swamp\" applies its Shield and stacks of Poison twice.",
+            "E2": "[Viscous Dvour] Enlighten 2 \"Strike to Protect\" Prepare 1 upgrades to Prepare 2.Base DMG and Crit Rate are increased by 20%.",
+            "E3": "[Never Forget...] Enlighten 3 At the start of the turn, gain Endure equal to 10% of Max HP.[Undying Flower Upon Slime] and [Strike to Protect] only removes half of Endure stacks."
         }
     },
     {
@@ -1031,6 +1176,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Liz's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Liz's Rouse, gain (50 per talent level) Keyflare.At the start of battle, add 1 \"Corrupted Flames\" with Exhaust into your hand.Increase the base damage of \"Green Flames\" and all related derivative cards by (5% per talent level)."
+        },
+        "enlightens": {
+            "E1": "[Verdant Spark] Enlighten 1 \"Corrupted Flames\" will upgrade to \"Deadly Flames\" if it remains in the hand or Ultra Space at the end of the turn.",
+            "E2": "[Eternal Flames] Enlighten 2 \"Strike\" and \"Defense\" gain Leap effects. \"Strike\" Leap: Applies 50% of the DMG dealt as stacks of Poison. \"Defense\" Leap: Triggers 25% of Poison on all enemies.",
+            "E3": "[Last Dawnlight] Enlighten 3 \"Dance to Destruction\" draws 1 card for every 2 cards discarded."
         }
     },
     {
@@ -1065,6 +1215,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Lotan's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Lotan's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Swords Unleashed] Enlighten 1 \"Blade of Defiance\" is considered as \"Strike\".Lotan's \"Strike\" base DMG increased by 30%.",
+            "E2": "[Surging Warlust] Enlighten 2 \"Tides of Hubris\" is considered as \"Strike.\"Strength gained from this card is doubled.",
+            "E3": "[Timeless Solitude] Enlighten 3 \"Beast of Chaos\" gains an additional instance of DMG.Add 2 \"Strike\" cards with Exhaust and Void to your hand."
         }
     },
     {
@@ -1103,6 +1258,11 @@
             "T1": "Innate: Undying Piety Talent At the start of battle, add 1 \"Obesssion\" to your hand.\"Strike\" deals extra damage equal to 50% of Tentacle DMG.For every 1% of Critical DMG Miryam has, \"Pray to the Abyss\" Strength and Tentacle DMG gain, Aliemus generated, and application and triggering of Poison effects are increased by 0.2%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Miryam's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Miryam's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Solitary Pilgrimage] Enlighten 1 \"Exalted Pyre\" temporarily increases Crit DMG by 15% of Miryam's Base Crit DMG.",
+            "E2": "[The Ultimate Descent] Enlighten 2 \"The Chosen One\" increases Realm Mastery by 20 points and gains Prepare 1 and Retain.Gains Prepare 1 and Retain.",
+            "E3": "[Vanity's Collapse] Enlighten 3 Ritual effects increased by 30%.Each conversion of \"Sacrament\" to an \"Obsession\" increases Miryam's Base DMG and base Poison applied by \"Pray to the Abyss\" by 15% for the rest of the battle."
         }
     },
     {
@@ -1137,6 +1297,11 @@
             "T1": "Innate: Divine Realm's Order Talent Max level: 1 When Murphy: Fauxborn is on the team, the Aequor Realm ascends to Divine Realm: Aequor. Tentacle DMG is changed to 5% of the team's Max HP. Team DMG Amplification +50% after exploration begins (effect doubled if the team only has Aequor and/or Chaos Awakeners, though no additional starting Tentacles will be Spawned). Disable the Tentacle Gathering effect. Divine Realm: Tentacle Stance gain the following new effects: Tranquil Sea: Immediately gain a Shield equal to 25% Max HP. Tentacle will no longer attack at turn end. Entering this stance has a 3 turn cooldown. Raging Waves: Tentacle DMG x 125% for the turn. For each instance of Active DMG dealt, command 1 Tentacle to attack. At the end of the turn, lose 1 Tentacle. Entering this stance has a 3 turn cooldown. Gain Divine Realm: Aequor Mastery, scaling off your Realm Mastery. Each point of Aequor Mastery increases shield gained by Tranquil Sea by 0.025% Max HP, and increase the Tentacle DMG while in Raging Waves by 0.025% Max HP. This effect is doubled if the team only has Aequor and/or Chaos Awakeners.",
             "T2": "Madness Omen Talent Max level: 12 Obtain (5 per talent level) Aliemus after the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages. Murphy: Fauxborn's CON, ATK, and DEF are increased by (3% per talent level). After the first time using Murphy: Fauborn's Rouse, gain (50 per talent level) Keyflare. When Murphy: Fauxborn deals DMG, inflict Sacrifice stacks equal to 10% (+4% per talent level) of DMG dealt to the target. Covenant state's Birth Ritual infliction is doubled. When there are 1/2/3 other \"Lemurian\" Awakeners on the team, gain the following effects: Max HP +6%/15%/30%. After using an Exalt, gain a Shield equal to 50%/125%/250% of Murphy: Fauxborn's DEF. This effect can only occur once per turn, and does not benefit from Shield Generation Boost. Note: I believe this means the value can't be affected by Alert or any wheel that \"increases your Shield gain\" or whatever. I could be wrong though."
+        },
+        "enlightens": {
+            "E1": "[Kneeler's Supplication] Enlighten 1 [Waltz of Lemuria] Tentacle DMG, Shield Generation, and Final DMG +10%, +0.2% for each point of Keyflare Regen.",
+            "E2": "[Inverted Pregnancy] Enlighten 2 Murphy: Fauxborn's Crit Rate +3% per Tentacle; Crit DMG +3% per 1% Max HP value of Sacrifice or Delayed Sacrifice stacks. Note: If you had 1000 Max HP, and you had 100 stacks of Sacrifice or Delayed Sacrifice, that'd be 30% Crit DMG.",
+            "E3": "[Profane Apocalypse] Enlighten 3 Draw 1 [Abyss Hymns] when playing Murphy: Fauxborn's [Strike] or [Defense]. This effect can only occur once per turn."
         }
     },
     {
@@ -1171,6 +1336,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Murphy's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Murphy's Rouse, gain (50 per talent level) Keyflare.Tentacle DMG increases by 2.7% (+0.3% per talent level) of Sacrifice stacks gained."
+        },
+        "enlightens": {
+            "E1": "[Silent Defiance] Enlighten 1 \"Vortex Reversed\" gains Retain.For every 2 Tentacles, deal an additional instance of DMG.",
+            "E2": "[Inextricable Bloodline] Enlighten 2 \"Strike\" and \"Defend\" gain Tentacle DMG equal to (1.5/1.8/2.1/2.4/2.7/3)% of Murphy's ATK (the effect's scale with the levels of \"Strike\" and \"Defend\").",
+            "E3": "[Emancipating Touch] Enlighten 3 At the end of the turn, Murphy gains 5 Aliemus.When Posse is used, remove Sacrifice stacks equal to 2% of Max HP."
         }
     },
     {
@@ -1205,6 +1375,11 @@
             "T1": "Innate: Daily Maintenance Talent For every point of Realm Mastery Nautila has, the Counter DMG from \"Ready and Set\" is increased by 0.25%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Nautila's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Nautila's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Blank Recollection] Enlighten 1 \"Strike\" gains Counter equal to (10/12/14/16/18/20)% of ATK (effect scales with the level of \"Strike\").",
+            "E2": "[Absent Cogwheel] Enlighten 2 \"No Trespassing\" gains Preparation 1.",
+            "E3": "[Forgotten Dreams] Enlighten 3 Increases Fixed DMG of \"Ready and Set\" by 50%.After release, grants immunity to Fragile, Weakness, and Vulnerable for 1 turn."
         }
     },
     {
@@ -1239,6 +1414,11 @@
             "T1": "Innate: Immerse Talent For every 1% of DMG Amplification Nymphaea has, the base Poison inflicted by [Knell of Death] and [Passage of the Ego] is increased by 0.5%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Nymphaea's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Nymphaea's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Ocean's Vessel] Enlighten 1 \"Knell of Death\" applies 50% more Poison. Gain a shield equal to (15/18/21/24/27/30)% of DEF (effect scales with the level of \"Knell of Death\").",
+            "E2": "[Silent Permeation] Enlighten 2 \"Midnight Tide\" DMG increases by 33%.The first 3 Symptom Cards played each turn increase \"Midnight Tide\" DMG by (5/6/7/8/9/10)% of ATK for the rest of the battle (effect scales with the level of \"Midnight Tide\").",
+            "E3": "[Frostbloom Tide] Enlighten 3 After releasing \"Passage of the Ego\" this battle, increase the Poison applied by \"Passage of the Ego\" by (30/36/42/48/54/60)% of ATK (effect scales with the level of \"Passage of the Ego\")."
         }
     },
     {
@@ -1273,6 +1453,11 @@
             "T1": "Innate: Formless Refinement Talent For every 1% Sigil Yield Ogier has, the Temporary Strength gained from [Seven Arts and Virtues] increases by 3%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Ogier's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Ogier's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Honesty Unto Thyself] Enlighten 1 \"Piercing Strike\" Vulnerable duration +1 turn.Base DMG +100%.DMG dealt increases by 3x Strength instead of 2x now.",
+            "E2": "[Mercy for the Meek] Enlighten 2 \"Seven Arts and Virtues\" shields 20% more.If the player is in Fragile state, increase shield gained by 33%.",
+            "E3": "[Sacrifice for Justice] Enlighten 3 \"Unstable Barrier\" shield gained increased by 28%.Gain Strength equal to (3.0/3.6/4.2/4.8/5.4/6.0)% of Ogier's ATK (effect scales with the level of \"Unstable Barrier\")."
         }
     },
     {
@@ -1307,6 +1492,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Pandia's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Pandia's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Embrace the Pain] Enlighten 1 [Strike] gains Temporary Counter equal to 50% of the damage.[Defend] gains Counter equal to (7.5/9/10.5/12/13.5/15)% of ATK (effect scales with level of \"Defense\").",
+            "E2": "[Blazing Desire] Enlighten 2 \"Wax-Hot Desire\" grants Pandia 20 Aliemus.",
+            "E3": "[You're Being Naughty...] Enlighten 3 \"Honey-Colored Tragedy\" Base DMG doubles.Gains counter equal to (15/18/21/24/27/30%) of ATK."
         }
     },
     {
@@ -1341,6 +1531,11 @@
             "T1": "Innate: Painter's Eye Talent Max level: 1 After Pickman triggers the Discover effect or uses Chromaphage, he gains 1 stack of Creativity.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages. Pickman's CON, ATK, and DEF stats increase by (3% per talent level). After using Pickman's Rouse, gain (50 per talent level) Keyflare.[Truth in Delusions] further increases the Final DMG dealt by other Awakener's Exalts by 5-15%. After use, Pickman's Exalt Aliemus cost -5."
+        },
+        "enlightens": {
+            "E1": "[Cross-Hatched Rendering] Enlighten 1 Pickman's [Strike] and [Defend] card gains additional effect: Randomly draw 1 Command Card from the deployed Awakeners. This effect can activate once per turn.",
+            "E2": "[Centered Composition] Enlighten 2 Command Cards created by Pickman's Exalt now have Advanced Orisons. Relics created by [Lifelike Rendition] are now Golden Relics.",
+            "E3": "[Invocation of the Muse] Enlighten 3 After Pickman consumes Creativity, he gains 50 Aliemus and can Exalt 2 times this turn."
         }
     },
     {
@@ -1375,6 +1570,11 @@
             "T1": "Innate: Atonement by Pain Talent Max level: 1 Pollux's first Command Card played each turn gains a DMG boost equal to 200% of its ATK and a Shield boost equal to 50% of its DEF. Also gain 10 Aliemus. At the end of battle, Pollux's Base DMG and the DMG boost effect of [Atonement by Pain] are increased by 20% for the rest of the exploration. The DMG bonus effect is doubled during a Boss Battle.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Pollux's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Pollux's Rouse, gain (50 per talent level) Keyflare.The DMG bonus effect from [Atonement by Pain\" is increased by 50% of Pollux's ATK.After gaining 50 stacks of Sin Mark, create 1 [Sacred Heart] and add it to your hand.After gaining 100 stacks of Sin Mark, [Sacred Heart] gains a new effect: when Exhausted, draw 1 of either [Soulsearing Light] or [Cleansing Judgment].The effect of Sin Mark is doubled against enemies who are \"Church of the Lightbearers\"."
+        },
+        "enlightens": {
+            "E1": "[Lightbearer's Herald] Enlighten 1 At the start of each battle, add 1 \"Sacred Heart\" to your hand.",
+            "E2": "[Flames of Salvation] Enlighten 2 For each card in hand, Pollux's [Strike] and [Defense] generate +1 Aliemus. For each [Sacred Heart] played, reduce the cost of [Cleansing Judgment] by 1.",
+            "E3": "[Divine Revelation] Enlighten 3 When [Sacred Heart] is Exhausted, Pollux's next played Command Card takes effect 1 additional time."
         }
     },
     {
@@ -1409,6 +1609,11 @@
             "T1": "Innate: Silverheart Resonance Talent Ramona gains an additional 2.5 points of Keyflare. Ramona gains an additional 0.5 points of Keyflare for every affinity level gained.For each point of Keyflare Regen, increase the Base DMG of [Queen's Sword] by 1% and the temporary Realm Mastery gained from the card by 0.75.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Ramona's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Ramona's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Innocent Departure] Enlighten 1 \"Queen's Sword\" deals +1 instance of DMG and gains Temporary Strength equal to (2.5%/3%/3.5%/4%/4.5%/5%) of Ramona's ATK for each instance of DMG (effect increases with the level of \"Queen's Sword\").When discarded, gain Keyflare equivalent to the amount gained if the card was instead played.",
+            "E2": "[Omen of Unknowns] Enlighten 2 \"Assault Thesis\" grants an additional 35 Keyflare for every 1 Arithmetica Cost of the drawn card.",
+            "E3": "[Precious Ties] Enlighten 3 After releasing Posse, Ramona's Temporary Crit Rate increases by 50%.[Mundus Deduction] shuffles 1 [Inspiration] into the Draw Pile."
         }
     },
     {
@@ -1443,6 +1648,11 @@
             "T1": "Innate: Winner Takes All Talent Ryker gains 5 Black Sigils upon killing an enemy, up to 5 times per exploration. For every 1% Sigil Yield Ryker has, the amount gained increases by 1%.After gaining 75/150/300 Black Sigils through battle, increase Relic capacity by 1 and select a \"Chaos Legacy\" relic to obtain at the end of the battle.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Ryker's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Ryker's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Fortune's Boon] Enlighten 1 \"Unexpected Gain\" now reduces the Arithmetica Cost of the chosen Card by 2 on a critical hit. \"Showdown\" grants Ryker an additional 3 Aliemus for every critical hit.",
+            "E2": "[Honest Return] Enlighten 2 Gain 15 Black Sigils at the start of the exploration. For every 1% of Black Sigils that Ryker drops, the amount obtained increases by 1%. This will also progress \"Winner Takes All\".",
+            "E3": "[Certain Gain] Enlighten 3 For every 1 Black Sigil consumed, increase the Base DMG of [All-In!] by 0.5% for this exploration.[Strike] and [Defend] can be forced played by consuming 3 Black Sigils when Arithmetica is insufficient. When played this way, the card applies its effects twice."
         }
     },
     {
@@ -1478,6 +1688,11 @@
             "T2": "Innate: Origin of All Life Talent For every 1% Sigil Yield Salvador has, the maximum amount of Crimson Furnace healing that can be accumulated is increased by 0.15% Max HP.",
             "T3": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T4": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Salvador's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Salvador's Rouse, gain (50 per talent level) Keyflare.After selecting \"Perception\" in Ashen Ruins, Max HP increases by 2.25%(+0.25% per talent level) of original Max HP."
+        },
+        "enlightens": {
+            "E1": "[Divine Proxy] Enlighten 1 \"Defense\" accumulates Crimson Furnace recovery amount equivalent to (3/3.6/4.2/4.8/5.4/6)% CON (increases with the level of \"Defense\"). For every 2 Crimson Furnace recovery accumulated in this battle, increase the DMG of \"Strike\" by 1.",
+            "E2": "[Book of Genesis] Enlighten 2 \"Blessed are the Bones\" Embryo Fusion +15%.The Accumulated healing from the Crimson Furnace increases with the number of turns, increasing each turn by (0.75/0.9/1.05/1.2/1.35/1.5)% of CON (increases with the level of \"Blessed are the Bones\"). \"End of Suffering\" Crit Rate increases by 25%; gains Prepare 1.",
+            "E3": "[Salvation's Hand] Enlighten 3 At the start of the turn, accumulate Crimson Furnace healing equal to 6% of CON.\"Creator's Blessing\" grants Salvador a 35% Temporary Crit DMG increase for 1 turn."
         }
     },
     {
@@ -1512,6 +1727,11 @@
             "T1": "Innate: Death's Enlightenment Talent For every 1% Death Resistance Sanga has, the Aliemus gained from [Strike] and [Defend] is increased by 0.03, and [The Lost Art] gains an additional 0.15% Crit Rate and Base DMG.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Sanga's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Sanga's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Melodic Scultping] Enlighten 1 \"Opus of Isolation\" immediately grants a shield equal to (8/9.6/11.2/12.8/14.4/16)% of DEF (effect increases as the level of \"Opus of Isolation\" increases).",
+            "E2": "[Kneel Before Beauty] Enlighten 2 \"Beauty's Mercy\" gains an additional shield equal to (3/3.6/4.2/4.8/5.4/6)% of DEF for each Tentacle present (effect increases with the level of \"Beauty's Mercy\").",
+            "E3": "[Artistic Dionysia] Enlighten 3 \"The Lost Art\" increases Base DMG and Shield Generation by 25%. Gains an additional 25% Crit Rate and Crit DMG."
         }
     },
     {
@@ -1546,6 +1766,11 @@
             "T1": "Innate: Guardian of Vanity Talent For every 1% Crit Rate Sorel has, increase the aliemus gained from [Defend] by 0.2",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Sorel's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Sorel's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Flowing Rill] Enlighten 1 If current HP is below 50%, \"Strike\" deals 2 instances of DMG and Embryo Fusion +10%. \"Defense\" gains 2 instances of Shield, Embryo Fusion +10%.",
+            "E2": "[Vintage Nectar] Enlighten 2 \"Egelance of Rose\" DMG is increased by 25%.For each instance of damage dealt, temporarily increase Crit Rate by 5%.",
+            "E3": "[Lustrous Pearl] Enlighten 3 At the start of battle, Embryo Fusion +25%.Every time Death Resistance is triggered, Embryo Fusion +25%.For each instance of DMG Sorel deals this turn, her DMG dealt this turn increases by 3% of her ATK."
         }
     },
     {
@@ -1583,6 +1808,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Tawil's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Tawil's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Boundless Sagacity] Enlighten 1 \"Master of Omniscient Verity\" reduces the Arithmetica Cost of changing Command Cards by 1. \"Timestrung Pinions Unfurled\" draws an additional \"Insight\" into your hand.",
+            "E2": "[Omniscient and Omnipotent] Enlighten 2 \"Omnifex Convergence\" cards obtained via Discover gain Prepare 1.",
+            "E3": "[Nonexistent Existence] Enlighten 3 [Strike] and [Defend] grant Tawil 3% Crit Rate and Crit DMG, up to 30%.When triggering Death Resistance for the first time during exploration, place 1 [Echoes of the Past] into your hand.[Echoes of the Past] (Cost: 0): Reverts your HP and shield into their values at the start of the previous turn."
         }
     },
     {
@@ -1617,6 +1847,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Thais' CON, ATK, and DEF stats increase by (3% per talent level).After using Thais' Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Forest's Embrace] Enlighten 1 \"Ancient Caress\" Strength gain increases by 50%. The effects of \"Sacred Blood's Instinct\" are doubled.",
+            "E2": "[Seed of Chaos] Enlighten 2 \"Ritual of Abundance\" reduces the Arithmetica Cost of the copied cards by 1 more.",
+            "E3": "Everlasting Cycle Enlighten 3 Automatically gain 50% Embryo Fusion at the start of each turn.[Strike] and [Defend] gain Strength equal to 1% of ATK."
         }
     },
     {
@@ -1651,6 +1886,11 @@
             "T1": "Innate: Planetary Traveler Talent For each 1% of Sigil Yield Tinct has, [Aurora] gains an additional 0.15% Temporary Crit Rate.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Tinct's CON, ATK, and DEF stats increase by (3% per talent level).After using Tinct's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Stellar Reverberation] Enlighten 1 \"Strike\" gains an additional damage instance. Gain Leap effect.Leap: Deal one instance of 3x DMG.",
+            "E2": "[Midnight Elegy] Enlighten 2 \"Defense\" gains an additional Shield instance. Gain Leap effect.Leap: Only gain 1 Shield instance, but doubles Aliemus gain.",
+            "E3": "[Falling Skyward] Enlighten 3 \"Distant Melody Swells\" and \"Aurora\" gain Crit DMG equivalent to Crit Rate gained."
         }
     },
     {
@@ -1685,6 +1925,11 @@
             "T1": "Innate: Divine King's Power Talent For every point of Aliemus Regen Level Tulu has, [Strike] deals (5% of Tentacle DMG and Strength) more DMG. [Abyss Order] deals (15% of Tentacle DMG and Strength) more DMG.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Tulu's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Tulu's Rouse, gain (50 per talent level) Keyflare.Every Tentacle's attack increases Temporary Tentacle DMG by 2.5% of Tulu's ATK, up to 15 (+1 per talent level) times per turn."
+        },
+        "enlightens": {
+            "E1": "[Nocturnal Murmurs] Enlighten 1 \"Abyss Order\" orders all Tentacles to attack all enemies.If the current pose is \"Tranquil Sea\", Arithmetica cost is reduced by 2.",
+            "E2": "[Touch of Revival] Enlighten 2 \"Strike\" and \"Defense\" gains Temporary Strength and Temporary Tentacle DMG equal to (4/4.8/5.6/6.4/7.2/8)% of Tulu's ATK (effects scale with the levels of \"Strike\" and \"Defense\").",
+            "E3": "The Stars Are Right Enlighten 3 At the end of the turn, Tulu gains 5 Aliemus.[When Lemuria Returns] temporarily increases Crit Rate by 15%."
         }
     },
     {
@@ -1719,6 +1964,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Uvhash's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Uvhash's Rouse, gain (50 per talent level) Keyflare.The first 10 \"Shriek, Blood!\" cards played each turn do not add \"Arithmetica Harmony\".Uvhash's Base DMG is increased by (3% per talent level). This effect is doubled when HP is below 25%."
+        },
+        "enlightens": {
+            "E1": "[The Gladiator] Enlighten 1 \"Screech, Blood!\" Base DMG and Strength gain increased by 30%.",
+            "E2": "[Roman Elegy] Enlighten 2 \"Boil, Blood!\" Base DMG increased by 33%.Deals 2 additional instances of DMG when HP is below 25%.",
+            "E3": "[Sorcerer's End] Enlighten 3 \"Hymn of Blood and Sand\" grants an additional 1x Strength boost with each Devour."
         }
     },
     {
@@ -1753,6 +2003,11 @@
             "T1": "Innate: Revelation Talent At the start of turn, gain 1 stack of Dreamlure. Dreamlure can stack up to a maximum of 10.For every 1 stack of Dreamlure consumed, increase the Counter gained by [Keeper of the Lost] and [Necropolis of Dreams] by 5% ATK in this battle.For every 1% DMG Amplification Wanda has, increase the Counter gained by [Necropolis of Dreams] by 0.75%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Wanda's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Wanda's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[The Revelation] Enlighten 1 [Spine Needle Chains] - Has 25% increased critical rate.[Keeper of the Lost] - Base Counter gained is increased by 15%.",
+            "E2": "Lakeborne Dweller Enlighten 2 Upgrade all effects when consuming Dreamlure.[Necropolis of Dreams] - When consuming 5 stacks, additionally obtain 15 Aliemus.[Necropolis of Dreams] - When consuming 10 stacks, additionally increase damage reduction by 5%.[Spine Needle Chains] - Doubles the Strength reduction effect.[Keeper of the Lost] - Increases the Counter gained by 50%.",
+            "E3": "Venus and Fur Enlighten 3 At the end of battle, gain an additional 5 Black Sigils. This can be increased by Sigil Yield.After Wanda plays a card, gain 1 stack of Dreamlure. This effect can trigger up to 2 times per turn."
         }
     },
     {
@@ -1787,6 +2042,11 @@
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Obtain (5 per talent level) Aliemus after the start of exploration.",
             "T3": "Soul Shaping Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Winkle's CON, ATK, and DEF are increased by (3% per talent level).After the first time using Winkle's Rouse, gain (50 per talent level) Keyflare."
+        },
+        "enlightens": {
+            "E1": "[Dread of the Darkness] Enlighten 1 \"Basic Strike\" and \"Energy Beam\" DMG receives a 25% Counter Buff.",
+            "E2": "[Forsaken Homeland] Enlighten 2 \"Psyche Reforged\" grants Shield equal to 5-10% of DEF for each card discarded (the effect increases with the level of \"Psyche Reforged\").Draw 1 card immediately if Leap is triggered.",
+            "E3": "[Rebirth Through Death] Enlighten 3 \"Formless Shifting\" increases Shield Generation and Counter by 25%.The selected Awaker will release Exalt twice this turn before entering cooldown."
         }
     }
 ]
