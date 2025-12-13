@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character Database</title>
     
-    <!-- React & ReactDOM -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     
-    <!-- Babel (to compile JSX in browser) -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
@@ -208,6 +205,24 @@
                             ))}
                             </div>
                         </section>
+                        
+                        {/* Enlightens */}
+                        <section>
+                            <SectionHeader icon={Shield} title="Enlightens" />
+                            <div className="space-y-3">
+                            {data.enlightens && Object.entries(data.enlightens).map(([key, value]) => (
+                                <div key={key} className="bg-slate-800 p-3 rounded border border-slate-700">
+                                <div className="flex items-start gap-3">
+                                    <div className="bg-fuchsia-900/40 text-fuchsia-200 px-2 py-1 rounded text-xs font-bold shrink-0 mt-0.5 uppercase">
+                                    {key.replace('_', ' ')}
+                                    </div>
+                                    <p className="text-sm text-slate-300 leading-relaxed whitespace-pre-wrap">{value}</p>
+                                </div>
+                                </div>
+                            ))}
+                            </div>
+                        </section>
+
                         </div>
                     </div>
                     </div>
@@ -368,6 +383,10 @@
                             } else if (searchScope === 'exalt') {
                                 textToSearch = JSON.stringify(char.exalt || {});
                             }
+                            // SearchScope for Enlightens
+                            else if (searchScope === 'enlightens') { 
+                                textToSearch = JSON.stringify(char.enlightens || {}); 
+                            }
                             matchesSearch = searchRegex.test(textToSearch);
                         }
                     }
@@ -477,6 +496,7 @@
                                 <option value="global">Entire Record</option>
                                 <option value="cards">Cards Only</option>
                                 <option value="exalt">Exalts Only</option>
+                                <option value="enlightens">Enlightens Only</option>
                             </select>
                             <ChevronDown size={14} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none" />
                         </div>
