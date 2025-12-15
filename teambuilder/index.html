@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awakener Management App</title>
-    <!-- Load Tailwind CSS -->
+    <title>Morimens Team Builder</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Custom styles for dragging feedback and responsiveness */
+        /* Custom scrollbar to match index.html */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; } /* slate-950 */
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; } /* slate-700 */
+        ::-webkit-scrollbar-thumb:hover { background: #475569; } /* slate-600 */
+
+        /* App specific styles */
         body { font-family: 'Inter', sans-serif; }
+        
         .drag-source, .drag-clone {
             transition: all 0.2s ease-in-out;
             cursor: grab;
@@ -17,50 +23,14 @@
             cursor: grabbing;
         }
         .drag-source:hover, .drag-clone:hover {
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Darker shadow */
             transform: translateY(-2px);
         }
         .drag-over {
-            border: 2px dashed theme('colors.indigo.500');
-            background-color: theme('colors.indigo.50');
-        }
-        /* Custom scrollbar for groups */
-        .scroll-container::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-        }
-        .scroll-container::-webkit-scrollbar-thumb {
-            background-color: theme('colors.gray.400');
-            border-radius: 4px;
-        }
-        .scroll-container::-webkit-scrollbar-track {
-            background-color: theme('colors.gray.100');
+            border: 2px dashed theme('colors.indigo.500') !important;
+            background-color: theme('colors.slate.800') !important;
         }
         
-        /* Style for the main Team Composition vertical scrollbar */
-        #rows-container::-webkit-scrollbar {
-            width: 8px;
-        }
-        #rows-container::-webkit-scrollbar-thumb {
-            background-color: theme('colors.indigo.400');
-            border-radius: 4px;
-        }
-        #rows-container::-webkit-scrollbar-track {
-            background-color: theme('colors.indigo.800');
-        }
-        
-        /* Style for the Team Composition Rows horizontal scrollbar */
-        .team-row::-webkit-scrollbar {
-            height: 8px; /* Use height for horizontal scrollbar */
-        }
-        .team-row::-webkit-scrollbar-thumb {
-            background-color: theme('colors.indigo.400');
-            border-radius: 4px;
-        }
-        .team-row::-webkit-scrollbar-track {
-            background-color: theme('colors.indigo.800');
-        }
-
         /* Classes to apply during resizing to prevent unwanted text selection and change cursor */
         .no-select-col {
             user-select: none;
@@ -72,74 +42,64 @@
         }
     </style>
 </head>
-<!-- Use h-screen and flex flex-col to enable internal vertical flex growth and constraint -->
-<body class="bg-gray-50 h-screen flex flex-col p-4 md:p-8">
+<body class="bg-slate-950 text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white h-screen flex flex-col p-4 md:p-8">
 
-    <!-- App container must also be a flex column and grow to fill remaining height -->
     <div id="app" class="w-full mx-auto flex flex-col flex-grow overflow-hidden">
         
-        <header class="mb-4 p-4 bg-white rounded-xl shadow-lg flex-shrink-0">
-            <h1 class="text-4xl font-extrabold text-gray-900">Awakener Roster Manager</h1>
-            <p class="text-gray-500 mt-1">Right-click a unit to toggle between Owned/Unowned. Drag units from the roster to move them into the team rows below.</p>
+        <header class="mb-4 p-4 bg-slate-900 border border-slate-800 rounded-xl shadow-lg flex-shrink-0">
+            <h1 class="text-3xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">Morimens Team Builder</h1>
+            <p class="text-slate-400 mt-1 text-sm">Right-click a unit to toggle between Owned/Unowned. Drag units from the roster to move them into the team rows below.</p>
         </header>
 
-        <!-- Main Content Layout: Roster (Left) and Team (Right) -->
-        <!-- flex-grow and min-h-0 are crucial here to utilize remaining vertical space -->
         <div class="flex flex-col lg:flex-row gap-8 lg:gap-0 flex-grow min-h-0" id="main-layout">
 
-            <!-- LEFT COLUMN: Roster Groups (Owned & Unowned) -->
             <div id="roster-column" class="space-y-4 w-full transition-all duration-100 ease-out flex flex-col lg:flex-grow lg:min-h-0">
                 
-                <!-- Search Filter Block -->
-                <div id="search-block" class="bg-white p-6 rounded-xl shadow-lg flex-shrink-0">
-                    <label for="awakener-search" class="block text-sm font-medium text-gray-700 mb-2">Filter Roster by Name or Faction</label>
-                    <input type="text" id="awakener-search" placeholder="Search by name (e.g., 'Awakener-05') or faction (e.g., 'CARO')"
-                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 shadow-sm transition duration-150">
+                <div id="search-block" class="bg-slate-900 p-6 rounded-xl border border-slate-800 shadow-lg flex-shrink-0">
+                    <label for="awakener-search" class="block text-sm font-semibold uppercase tracking-wide text-slate-400 mb-2">Filter Roster</label>
+                    <input type="text" id="awakener-search" placeholder="Search by name (e.g., 'Awakener-05') or faction..."
+                            class="w-full bg-slate-800 text-slate-200 text-sm rounded border border-slate-700 pl-4 pr-4 py-3 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none placeholder:text-slate-600 shadow-inner">
                 </div>
 
-                <!-- Owned Group - Uses flex-grow to share vertical space. -->
-                <div id="owned-group" class="bg-white p-6 rounded-xl shadow-xl flex flex-col lg:flex-grow lg:min-h-0">
-                    <h2 class="text-2xl font-semibold mb-4 text-green-700 border-b pb-2 flex-shrink-0">Owned Roster (Drop Target)</h2>
-                    <!-- scroll-container takes the remaining height in this flex column -->
-                    <div id="owned-list" class="scroll-container overflow-y-auto p-2 flex flex-wrap gap-3 content-start flex-grow">
-                        <!-- Cards will be rendered here -->
+                <div id="owned-group" class="bg-slate-900 p-6 rounded-xl border border-slate-800 shadow-xl flex flex-col lg:flex-grow lg:min-h-0">
+                    <div class="flex items-center gap-2 mb-4 border-b border-slate-700 pb-2 flex-shrink-0">
+                        <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
+                        <h2 class="text-xl font-semibold text-slate-200">Owned Roster</h2>
                     </div>
+                    <div id="owned-list" class="scroll-container overflow-y-auto p-2 flex flex-wrap gap-3 content-start flex-grow">
+                        </div>
                 </div>
 
-                <!-- RESIZEABLE VERTICAL SPLITTER (Only visible on large screens) -->
                 <div id="roster-splitter" 
-                     class="h-2 w-full bg-indigo-700 rounded-full cursor-row-resize hover:bg-indigo-500 transition-colors duration-200 flex-shrink-0 hidden lg:block"
+                     class="h-2 w-full bg-slate-800 rounded-full cursor-row-resize hover:bg-indigo-500 border border-slate-700 transition-colors duration-200 flex-shrink-0 hidden lg:block"
                      title="Drag to resize Owned/Unowned panels">
                 </div>
 
-                <!-- Unowned Group - Uses flex-grow to share vertical space. -->
-                <div id="unowned-group" class="bg-white p-6 rounded-xl shadow-xl flex flex-col lg:flex-grow lg:min-h-0">
-                    <h2 class="text-2xl font-semibold mb-4 text-red-700 border-b pb-2 flex-shrink-0">Unowned Roster (Drop Target)</h2>
-                    <!-- scroll-container takes the remaining height in this flex column -->
-                    <div id="unowned-list" class="scroll-container overflow-y-auto p-2 flex flex-wrap gap-3 content-start flex-grow">
-                        <!-- Cards will be rendered here -->
+                <div id="unowned-group" class="bg-slate-900 p-6 rounded-xl border border-slate-800 shadow-xl flex flex-col lg:flex-grow lg:min-h-0">
+                    <div class="flex items-center gap-2 mb-4 border-b border-slate-700 pb-2 flex-shrink-0">
+                        <div class="w-2 h-2 rounded-full bg-rose-500"></div>
+                        <h2 class="text-xl font-semibold text-slate-200">Unowned Roster</h2>
                     </div>
+                    <div id="unowned-list" class="scroll-container overflow-y-auto p-2 flex flex-wrap gap-3 content-start flex-grow">
+                        </div>
                 </div>
             </div>
 
-            <!-- DRAG HANDLE (Only visible on large screens) -->
             <div id="drag-handle" 
-                 class="hidden lg:block w-2 bg-indigo-700 rounded-full cursor-col-resize hover:bg-indigo-500 transition-colors duration-200 flex-shrink-0"
+                 class="hidden lg:block w-3 bg-slate-950 flex items-center justify-center cursor-col-resize flex-shrink-0 group"
                  title="Drag to resize panels">
+                 <div class="w-1 h-12 bg-slate-700 rounded-full group-hover:bg-indigo-500 transition-colors"></div>
             </div>
 
-            <!-- RIGHT COLUMN: Team Composition Rows -->
-            <!-- Removed the h2 title here to maximize space -->
-            <div id="team-column" class="bg-indigo-900 p-8 rounded-xl shadow-2xl flex flex-col lg:flex-grow lg:min-h-0">
-                
-                <!-- rows-container has overflow-y-auto and flex-grow, now properly constrained by parent height -->
-                <!-- space-y-0 removes all vertical space between rows -->
-                <div id="rows-container" class="space-y-0 overflow-y-auto pr-2 flex-grow">
-                    <!-- Rows are dynamically rendered here by JavaScript -->
+            <div id="team-column" class="bg-slate-900 p-8 rounded-xl border border-slate-800 shadow-2xl flex flex-col lg:flex-grow lg:min-h-0">
+                <div class="flex items-center gap-2 mb-6 border-b border-slate-700 pb-2 flex-shrink-0">
+                    <h2 class="text-xl font-semibold text-slate-200">Team Composition</h2>
                 </div>
+                
+                <div id="rows-container" class="space-y-0 overflow-y-auto pr-2 flex-grow">
+                    </div>
 
-                <!-- Add Row Button moved to the bottom (flex-shrink-0) -->
-                <button id="add-row-btn" class="mt-4 p-2 bg-indigo-500 hover:bg-indigo-400 text-white font-bold rounded-lg transition duration-200 shadow-md flex-shrink-0">
+                <button id="add-row-btn" class="mt-4 p-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-lg border border-indigo-500 transition duration-200 shadow-lg flex-shrink-0">
                     + Add Team Row (Max 10)
                 </button>
             </div>
@@ -151,61 +111,55 @@
         // --- DATA AND STATE MANAGEMENT ---
         
         let awakenersData = [];
-        const TOTAL_UNITS = 52; // Max number of units supported by the two-digit index (00-51)
+        const TOTAL_UNITS = 52; 
         const MAX_ROWS = 10;
         const MAX_ROW_CAPACITY = 4; 
-        const DATA_SOURCE_PATH = '../awakeners.json'; // External data source path
-        // Updated constant list for faction names
+        const DATA_SOURCE_PATH = './awakeners.json'; // Adjusted path to be relative to root like index.html often is
         const FACTIONS = ["ULTRA", "CARO", "CHAOS", "AEQUOR"]; 
 
-        // State for the team rows (stores names of characters in each row) - Default 5 rows
         let rowsState = [
             [], [], [], [], []
         ];
         
-        // State for the search query
         let searchQuery = '';
         
         // --- RESIZING STATE ---
-        let isResizing = false; // Horizontal resize flag (Roster vs Team)
-        let isVerticalResizing = false; // NEW: Vertical resize flag (Owned vs Unowned)
+        let isResizing = false; 
+        let isVerticalResizing = false; 
         let rosterColumn;
         let ownedGroup; 
         let unownedGroup; 
-        
-        // Persistent state for vertical split: 50% is the default split
         let ownedHeightPercentage = 50; 
-        
-        const MIN_WIDTH_PERCENT = 20; // Minimum width for horizontal resize
-        const MIN_PX_HEIGHT = 120; // NEW: Minimum pixel height for vertical panels (Owned/Unowned)
+        const MIN_WIDTH_PERCENT = 20; 
+        const MIN_PX_HEIGHT = 120; 
 
-        /**
-         * Generates mock Awakener data as a fallback.
-         */
         function generateMockData() {
             console.log("Could not load external data. Using mock data fallback.");
             const mockData = [];
             for (let i = 0; i < TOTAL_UNITS; i++) {
-                // Use padded index for distinct naming and easy visual confirmation
                 const name = `Awakener-${i.toString().padStart(2, '0')}`;
-                // Cycle through the defined factions instead of rarity
                 const faction = FACTIONS[i % FACTIONS.length]; 
                 mockData.push({ 
                     name: name, 
-                    faction: faction, // Changed from rarity to faction
-                    group: 'owned', // Default to owned
-                    displayName: name // Set displayName for consistency
+                    faction: faction, 
+                    group: 'owned', 
+                    displayName: name 
                 });
             }
             awakenersData = mockData;
         }
 
-        /**
-         * Loads Awakener data from an external JSON file or falls back to mock data.
-         */
         async function loadAwakenersData() {
             try {
-                const response = await fetch(DATA_SOURCE_PATH);
+                // Try ./awakeners.json first (common structure), then ../awakeners.json
+                let response;
+                try {
+                     response = await fetch('./awakeners.json');
+                     if(!response.ok) throw new Error("Not found");
+                } catch (e) {
+                     response = await fetch('../awakeners.json');
+                }
+
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -216,121 +170,69 @@
                     throw new Error("External data is empty or invalid.");
                 }
 
-                // Process external data: We map external properties to our fixed indexed names 
-                // to ensure the URL compression system (Awakener-XX) remains functional.
                 const processedData = externalData.slice(0, TOTAL_UNITS).map((item, i) => ({
-                    // Force the name format to match the indexer (00-51)
                     name: `Awakener-${i.toString().padStart(2, '0')}`, 
-                    // Use faction from external data, default to AEQUOR if missing/invalid
                     faction: FACTIONS.includes(item.faction) ? item.faction : "AEQUOR", 
-                    // Use the custom name if provided, otherwise default to the generated name for display
                     displayName: item.name || `Awakener-${i.toString().padStart(2, '0')}`,
-                    // Initialize group status
                     group: 'owned' 
                 }));
                 
                 awakenersData = processedData;
-                console.log(`Successfully loaded ${awakenersData.length} units from ${DATA_SOURCE_PATH}.`);
+                console.log(`Successfully loaded ${awakenersData.length} units.`);
 
             } catch (e) {
-                console.error(`Error loading data from ${DATA_SOURCE_PATH}:`, e);
+                console.error(`Error loading data:`, e);
                 generateMockData();
             }
         }
 
-        // --- LOOKUP HELPER ---
-
-        /**
-         * Finds an awakener object by name (Awakener-XX format).
-         * @param {string} name The Awakener name in "Awakener-XX" format.
-         * @returns {object | undefined} The Awakener object or undefined.
-         */
         function getAwakenerByName(name) {
             return awakenersData.find(a => a.name === name);
         }
 
-        /**
-         * Extracts the two-digit index string from an Awakener name (e.g., "Awakener-05" -> "05").
-         * @param {string} name 
-         * @returns {string} The two-digit index string.
-         */
         function getAwakenerIndexByName(name) {
             return name.split('-')[1];
         }
         
-        /**
-         * Converts a two-digit index string back to an Awakener name (e.g., "05" -> "Awakener-05").
-         * @param {string} indexString 
-         * @returns {string} The Awakener name.
-         */
         function getAwakenerNameByIndex(indexString) {
-            // Note: We rely on the indexString being correct (00-51)
             return `Awakener-${indexString}`;
         }
 
-
-        // --- URL STATE MANAGEMENT ---
-
-        /**
-         * Serializes the current application state into a plain text string using two-digit indices and delimiters.
-         * Format: [RowIndices],[RowIndices];...;[RowIndices]&[UnownedIndices]
-         * Example: 01,02;10&20,25
-         * @returns {string} The plain text state string (indices separated by delimiters).
-         */
         function serializeState() {
-            // 1. Convert rows of NAMES into two-digit INDEXES, then join rows by ';'
             const rowsString = rowsState.map(row => 
                 row.map(name => getAwakenerIndexByName(name)).join(',')
             ).join(';');
 
-            // 2. Convert unowned NAMES into two-digit INDEXES
             const unownedIndices = awakenersData
                 .filter(a => a.group === 'unowned')
                 .map(a => getAwakenerIndexByName(a.name));
             const unownedString = unownedIndices.join(',');
 
-            // 3. Combine with '&' delimiter 
             const rawState = `${rowsString}&${unownedString}`;
             return rawState;
         }
 
-        /**
-         * Deserializes the plain text state string (indices) and updates the application state.
-         * @param {string} rawState The raw state string from the URL.
-         */
         function deserializeState(rawState) {
             if (!rawState) return;
-            
             try {
-                // 1. Split by the main delimiter '&'
                 const parts = rawState.split('&');
                 const rowsPart = parts[0]; 
                 const unownedPart = parts[1] || ''; 
 
-                // 2. Deserialize Rows State (Indices -> Names)
                 const newRowsState = rowsPart.split(';').map(rowString => {
-                    // Split indices by ',', filter out empty strings
                     const indices = rowString.split(',').filter(index => index.length > 0);
-                    // Map indices back to names
-                    return indices.map(index => getAwakenerNameByIndex(index)).filter(name => getAwakenerByName(name)); // Filter out invalid names
-                }).filter(row => row.length > 0 || newRowsState.length === 0); // Keep at least one row, or if the initial state was empty
+                    return indices.map(index => getAwakenerNameByIndex(index)).filter(name => getAwakenerByName(name));
+                }).filter(row => row.length > 0 || newRowsState.length === 0); 
 
-                // Ensure we have at least one row if the deserialized state was entirely empty (e.g., "?state=&")
                 rowsState = newRowsState.length > 0 ? newRowsState : [[]];
                 
-
-                // 3. Deserialize Unowned Status (Indices -> Names)
-                // Reset all awakeners to default 'owned' first
                 awakenersData.forEach(a => a.group = 'owned'); 
 
                 if (unownedPart.length > 0) {
                     const unownedIndices = unownedPart.split(',').filter(index => index.length > 0);
-                    
                     unownedIndices.forEach(index => {
                         const name = getAwakenerNameByIndex(index);
                         const awakener = getAwakenerByName(name);
-                        
-                        // Only update if the awakener is actually in our data (for robustness)
                         if (awakener) {
                             awakener.group = 'unowned';
                         }
@@ -341,26 +243,17 @@
             }
         }
 
-        /**
-         * Updates the browser's URL with the current application state.
-         */
         function updateUrlState() {
             const rawState = serializeState();
-            // IMPORTANT: Use encodeURIComponent to correctly handle the '&' character as data, not a parameter delimiter
             const encodedState = encodeURIComponent(rawState);
             const newUrl = `${window.location.pathname}?state=${encodedState}`;
-            // Use history.replaceState to change the URL without adding a new entry to the browser history
             history.replaceState(null, '', newUrl); 
         }
 
-        /**
-         * Loads the state from the URL query parameter 'state'.
-         */
         function loadStateFromUrl() {
             const params = new URLSearchParams(window.location.search);
             const rawState = params.get('state');
             if (rawState) {
-                // IMPORTANT: Use decodeURIComponent to reverse the encoding before deserialization
                 const decodedState = decodeURIComponent(rawState);
                 deserializeState(decodedState);
                 console.log("State loaded from URL.");
@@ -369,104 +262,78 @@
 
         // --- UTILITY FUNCTIONS ---
 
-        /**
-         * Checks if an awakener is currently assigned to any team row.
-         * @param {string} name The Awakener name.
-         * @returns {boolean} True if the awakener is in any row, false otherwise.
-         */
         function isAwakenerInTeam(name) {
             return rowsState.some(row => row.includes(name));
         }
 
         /**
          * Determines Tailwind classes based on faction.
-         * @param {string} faction
-         * @returns {string} Tailwind classes for border/text color.
+         * UPDATED: Uses dark mode colors to match index.html style
          */
         function getFactionClasses(faction) {
             switch (faction) {
-                case "ULTRA": return 'border-purple-400 text-purple-600 bg-purple-50'; // Purple
-                case "CARO": return 'border-red-500 text-red-700 bg-red-50';       // Red
-                case "CHAOS": return 'border-yellow-400 text-yellow-600 bg-yellow-50';  // Yellow
+                case "ULTRA": return 'border-purple-700 text-purple-200 bg-purple-900/20';
+                case "CARO": return 'border-red-700 text-red-200 bg-red-900/20';
+                case "CHAOS": return 'border-yellow-600 text-yellow-200 bg-yellow-900/20';
                 case "AEQUOR":
-                default: return 'border-blue-400 text-blue-600 bg-blue-50';          // Blue
+                default: return 'border-blue-700 text-blue-200 bg-blue-900/20';
             }
         }
 
         /**
          * Creates the HTML element for an Awakener card.
-         * @param {object} awakener The character data object.
-         * @param {boolean} isClone If true, the card is being rendered inside a row.
-         * @param {number | null} rowId The source row ID if it is a clone, otherwise null.
-         * @returns {HTMLElement} The created card element.
+         * UPDATED: Styling matches the dark card aesthetic.
          */
         function createAwakenerCard(awakener, isClone = false, rowId = null) {
             const card = document.createElement('div');
-            // Use faction for styling
             const factionClasses = getFactionClasses(awakener.faction); 
 
-            // Base classes
-            let classes = `flex flex-col items-center w-28 h-32 p-1 rounded-lg border-2 shadow-md hover:shadow-lg transition duration-200`;
+            // Base classes - added border and dark background logic
+            let classes = `flex flex-col items-center w-28 h-32 p-1 rounded-lg border shadow-lg hover:shadow-xl transition duration-200`;
             
-            const awakenerName = awakener.name; // The internal Awakener-XX name
-            const displayName = awakener.displayName || awakenerName; // The name to show
+            const awakenerName = awakener.name; 
+            const displayName = awakener.displayName || awakenerName; 
 
             if (!isClone) {
-                // Original cards (in Owned/Unowned groups)
                 classes += ` drag-source cursor-pointer ${factionClasses}`;
                 card.draggable = true;
-                // Pass name for drag data
                 card.ondragstart = (e) => handleDragStart(e, awakenerName, null); 
-                
-                // Roster toggle remains right-click (oncontextmenu)
                 card.oncontextmenu = (e) => {
-                    e.preventDefault(); // Prevent default browser context menu
-                    toggleAwakenerGroup(awakenerName); // Use name
+                    e.preventDefault(); 
+                    toggleAwakenerGroup(awakenerName); 
                 };
             } else {
-                // Cloned cards (in Team Rows)
                 classes += ` drag-clone cursor-pointer ${factionClasses}`;
                 card.draggable = true;
-                // Pass the source row ID (0-9)
                 card.ondragstart = (e) => handleDragStart(e, awakenerName, rowId); 
             }
             
-            // Apply visual filter if Unowned
             if (awakener.group === 'unowned') {
-                classes += ' filter grayscale opacity-60 hover:opacity-100'; 
+                classes += ' filter grayscale opacity-40 hover:opacity-80'; 
             }
-            
 
             card.className = classes;
-            // Use dataset.name as the unique identifier
             card.dataset.name = awakenerName; 
 
-            // Image URL construction using the required file path format
+            // Handle images relative to index.html location
             const imageUrl = `../images/awakeners/${displayName}.png`;
-            
-            // Placeholder image URL for onerror fallback
-            const fallbackImageUrl = `https://placehold.co/100x100/A0A0FF/000?text=${displayName.replace(/[-\s]/g, '%20')}`;
+            const fallbackImageUrl = `https://placehold.co/100x100/1e293b/94a3b8?text=${displayName.replace(/[-\s]/g, '%20')}`;
 
             card.innerHTML = `
-                <div class="text-xs font-semibold uppercase truncate w-full text-center">${displayName}</div>
+                <div class="text-[10px] font-bold uppercase tracking-wider truncate w-full text-center mb-1 opacity-90">${displayName}</div>
                 <img 
                     src="${imageUrl}" 
                     alt="${displayName} image" 
-                    class="w-24 h-24 object-cover rounded-full mt-1 border-2 border-current shadow-inner"
+                    class="w-20 h-20 object-cover rounded-md border border-slate-600 shadow-sm bg-slate-800"
                     onerror="this.onerror=null; this.src='${fallbackImageUrl}';"
                 />
             `;
             return card;
         }
 
-        /**
-         * Toggles an awakener between the 'owned' and 'unowned' group.
-         * @param {string} name The Awakener name (Awakener-XX).
-         */
         function toggleAwakenerGroup(name) {
             const awakener = getAwakenerByName(name);
             if (awakener) {
-                // Cannot toggle status if the unit is currently in a team row
                 if (isAwakenerInTeam(name)) {
                     console.warn(`Cannot toggle status for ${name}. It is currently in a team row.`);
                     return;
@@ -478,38 +345,29 @@
             }
         }
 
-        /**
-         * Renders all awakeners into their respective groups, filtered by the current search query.
-         */
         function renderAwakeners() {
             const ownedList = document.getElementById('owned-list');
             const unownedList = document.getElementById('unowned-list');
 
-            // Clear containers
             ownedList.innerHTML = '';
             unownedList.innerHTML = '';
 
             const query = searchQuery.toLowerCase().trim();
 
-            // Filter data based on search query and team status
             const filteredAwakeners = awakenersData.filter(awakener => {
-                // 1. Always filter out units already in a team row
                 if (isAwakenerInTeam(awakener.name)) {
                     return false;
                 }
 
-                // 2. Apply text filter if query exists
                 if (query === '') {
                     return true;
                 }
 
-                // Check display name, internal name, or faction
                 return awakener.displayName.toLowerCase().includes(query) ||
                         awakener.name.toLowerCase().includes(query) ||
                         awakener.faction.toLowerCase().includes(query);
             });
 
-            // Render filtered cards
             filteredAwakeners.forEach(awakener => {
                 const card = createAwakenerCard(awakener);
                 if (awakener.group === 'owned') {
@@ -520,69 +378,59 @@
             });
         }
         
-        /**
-         * Updates the search query state and re-renders the roster.
-         * @param {Event} e 
-         */
         function handleSearchInput(e) {
             searchQuery = e.target.value;
-            renderAwakeners(); // Re-render the roster with the new filter
+            renderAwakeners(); 
         }
 
-
         /**
-         * Renders the cards placed in the team composition rows, and creates the row containers dynamically.
+         * Renders the cards placed in the team composition rows.
+         * UPDATED: Uses dark mode colors for row backgrounds.
          */
         function renderRows() {
             const rowsContainer = document.getElementById('rows-container');
-            rowsContainer.innerHTML = ''; // Clear existing rows
+            rowsContainer.innerHTML = ''; 
 
-            rowsState.forEach((rowNames, index) => { // rowNames now contains names
-                // 1. Create the Row container
+            rowsState.forEach((rowNames, index) => { 
                 const rowElement = document.createElement('div');
                 rowElement.id = `row-${index}`;
                 
-                // *** p-2 reduces vertical padding; flex-nowrap prevents cards from wrapping ***
-                rowElement.className = 'team-row p-2 bg-indigo-700 rounded-lg shadow-inner flex flex-nowrap gap-2 overflow-x-auto transition duration-300 mb-2'; // Increased mb-2 for spacing
-                
-                // 2. Add the Row label and Delete Button 
+                // UPDATED: bg-slate-800 border-slate-700 to match panels
+                rowElement.className = 'team-row p-2 bg-slate-800/50 border border-slate-700 rounded-lg shadow-inner flex flex-nowrap gap-2 overflow-x-auto transition duration-300 mb-2 items-center';
                 
                 const labelContainer = document.createElement('div');
-                // The label container takes up enough space to stay on the left, but flex-shrink-0 ensures it doesn't compress
-                labelContainer.className = 'flex items-center justify-between w-full sm:w-auto flex-shrink-0 min-w-[70px]';
+                labelContainer.className = 'flex flex-col items-center justify-center w-full sm:w-auto flex-shrink-0 min-w-[70px] px-2 border-r border-slate-700 mr-2';
                 
                 const label = document.createElement('p');
-                label.className = 'row-label text-indigo-300 font-medium';
-                label.textContent = `Row ${index + 1}:`;
+                // UPDATED: Text color
+                label.className = 'row-label text-indigo-400 font-bold text-sm uppercase tracking-wide';
+                label.textContent = `Row ${index + 1}`;
                 labelContainer.appendChild(label);
 
-                // Delete button
                 const deleteBtn = document.createElement('button');
-                deleteBtn.className = 'text-red-300 hover:text-red-500 font-bold p-1 leading-none text-xl ml-2';
+                // UPDATED: Text color and hover state
+                deleteBtn.className = 'text-slate-600 hover:text-red-400 font-bold p-1 leading-none text-xl mt-1 transition-colors';
                 deleteBtn.innerHTML = '&times;'; 
                 deleteBtn.title = `Delete Row ${index + 1}`;
 
-                // Only allow deletion if there is more than one row
                 if (rowsState.length > 1) {
                     deleteBtn.onclick = (e) => {
-                        e.stopPropagation(); // Prevent drag events firing from the button
+                        e.stopPropagation(); 
                         deleteRow(index);
                     };
                 } else {
                     deleteBtn.disabled = true;
-                    deleteBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                    deleteBtn.classList.add('opacity-0', 'cursor-not-allowed');
                 }
                 
                 labelContainer.appendChild(deleteBtn);
-                rowElement.appendChild(labelContainer); // Add the header first
+                rowElement.appendChild(labelContainer); 
                 
-                // 3. Attach Drag & Drop listeners (MUST be done for dynamically created elements)
                 rowElement.addEventListener('dragover', handleDragOver);
                 rowElement.addEventListener('dragenter', handleDragEnter);
                 rowElement.addEventListener('dragleave', handleDragLeave);
                 rowElement.addEventListener('drop', handleDrop);
 
-                // 4. Populate the row with cards (These will flow after the labelContainer due to flex-wrap)
                 rowNames.forEach(name => {
                     const awakener = getAwakenerByName(name);
                     if (awakener) {
@@ -594,116 +442,76 @@
                 rowsContainer.appendChild(rowElement);
             });
             
-            // 5. Update the button status
             updateAddRowButtonStatus();
         }
 
-        /**
-         * Adds a new empty row to the team state, up to MAX_ROWS.
-         */
         function addRow() {
             if (rowsState.length < MAX_ROWS) {
                 rowsState.push([]);
-                renderRows(); // Re-render everything
-                updateUrlState(); // Save state to URL
+                renderRows(); 
+                updateUrlState(); 
                 console.log(`Added new row. Total rows: ${rowsState.length}`);
             } else {
                 console.warn(`Cannot add more rows. Maximum limit of ${MAX_ROWS} reached.`);
             }
         }
         
-        /**
-         * Deletes a row and returns any assigned units back to the main roster.
-         * @param {number} rowIndex The index of the row to delete.
-         */
         function deleteRow(rowIndex) {
             if (rowsState.length <= 1) {
                 console.warn("Cannot delete the last remaining row.");
                 return;
             }
 
-            // The units are implicitly returned to the roster since they are no longer in rowsState
             const unitsInDeletedRow = rowsState[rowIndex];
 
-            // Remove the row from the state
             rowsState.splice(rowIndex, 1);
             
-            // Re-render everything
             renderRows();
             renderAwakeners();
-            updateUrlState(); // Save state to URL
+            updateUrlState(); 
 
-            console.log(`Deleted Row ${rowIndex + 1}. ${unitsInDeletedRow.length} units returned to Roster.`);
+            console.log(`Deleted Row ${rowIndex + 1}.`);
         }
 
-        /**
-         * Disables/updates the Add Row button based on the current row count.
-         */
         function updateAddRowButtonStatus() {
             const btn = document.getElementById('add-row-btn');
             if (btn) {
                 if (rowsState.length >= MAX_ROWS) {
                     btn.disabled = true;
                     btn.textContent = `Max Rows (${MAX_ROWS}) Reached`;
-                    btn.classList.replace('bg-indigo-500', 'bg-gray-500');
-                    btn.classList.replace('hover:bg-indigo-400', 'hover:bg-gray-500');
+                    btn.className = "mt-4 p-3 bg-slate-800 text-slate-500 font-bold rounded-lg border border-slate-700 cursor-not-allowed flex-shrink-0";
                 } else {
                     btn.disabled = false;
                     btn.textContent = `+ Add Team Row (Max ${MAX_ROWS})`;
-                    btn.classList.replace('bg-gray-500', 'bg-indigo-500');
-                    btn.classList.replace('hover:bg-gray-500', 'hover:bg-indigo-400');
+                    btn.className = "mt-4 p-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-lg border border-indigo-500 transition duration-200 shadow-lg flex-shrink-0";
                 }
             }
         }
 
         // --- EVENT HANDLERS (Drag & Drop) ---
 
-        /**
-         * Handles the start of a drag operation on an Awakener card.
-         * @param {DragEvent} e
-         * @param {string} awakenerName The name of the dragged awakener.
-         * @param {number | null} sourceRowId The ID of the row the card originated from, or null if from Roster.
-         */
         function handleDragStart(e, awakenerName, sourceRowId) {
             const dragData = {
-                name: awakenerName, // Use name
-                sourceRowId: sourceRowId // null if from Roster, 0-9 if from a row
+                name: awakenerName, 
+                sourceRowId: sourceRowId 
             };
-            // Use 'application/json' for complex data transfer
             e.dataTransfer.setData('application/json', JSON.stringify(dragData));
-            // Use 'move' since we are moving items either from Roster-to-Row or Row-to-Row/Roster
             e.dataTransfer.effectAllowed = 'move';
         }
 
-        /**
-         * Toggles the visual drag-over class on the team rows.
-         * @param {DragEvent} e
-         */
         function handleDragEnter(e) {
             e.target.closest('.team-row, #owned-list, #unowned-list')?.classList.add('drag-over');
         }
 
-        /**
-         * Toggles the visual drag-over class on the team rows.
-         * @param {DragEvent} e
-         */
         function handleDragLeave(e) {
             e.target.closest('.team-row, #owned-list, #unowned-list')?.classList.remove('drag-over');
         }
         
-        /**
-         * Allows dropping by preventing the default behavior.
-         * @param {DragEvent} e
-         */
         function handleDragOver(e) {
-            e.preventDefault(); // Necessary to allow drop
+            e.preventDefault(); 
             e.dataTransfer.dropEffect = 'move';
         }
 
-        /**
-         * Handles the dropping of an Awakener card into a team row.
-         * @param {DragEvent} e
-         */
         function handleDrop(e) {
             e.preventDefault();
             const rowElement = e.target.closest('.team-row');
@@ -712,49 +520,31 @@
             rowElement.classList.remove('drag-over');
 
             try {
-                // Retrieve and parse drag data
                 const dragData = JSON.parse(e.dataTransfer.getData('application/json'));
-                const awakenerName = dragData.name; // Use name
+                const awakenerName = dragData.name; 
                 const sourceRowId = dragData.sourceRowId; 
                 const targetRowId = parseInt(rowElement.id.split('-')[1]);
                 
-                // Check if the unit is already in the target row
                 const isAlreadyInTarget = rowsState[targetRowId].includes(awakenerName);
 
-                // --- CONSTRAINT CHECKS ---
-                
-                // 1. ROW CAPACITY CHECK (Applies if adding a unit, and it's not a self-move)
                 if (!isAlreadyInTarget) {
                     if (rowsState[targetRowId].length >= MAX_ROW_CAPACITY) { 
-                        console.log(`Row ${targetRowId + 1} is full (Max ${MAX_ROW_CAPACITY} units per row).`);
+                        console.log(`Row ${targetRowId + 1} is full.`);
                         return; 
                     }
                 }
                 
-                // --- STATE MODIFICATION ---
-
-                // 2. Handle removal from the source (Roster or another Row)
                 if (sourceRowId !== null) {
-                    // Moving from Row A to Row B (or A to A)
                     const rowId = parseInt(sourceRowId);
                     rowsState[rowId] = rowsState[rowId].filter(name => name !== awakenerName);
-                } else {
-                    // Moving from Roster to Row: No explicit removal needed, as renderAwakeners handles filtering.
                 }
 
-                // 3. Add to the target row (only if not already there, preventing duplicates)
                 if (!isAlreadyInTarget) {
-                    // Find the insertion index based on proximity to the drop target
                     rowsState[targetRowId].push(awakenerName); 
-                    console.log(`${awakenerName} added to Row ${targetRowId + 1}.`);
-                } else {
-                     // If it was dropped back into the row it came from, we just do nothing.
-                     console.log(`${awakenerName} already in Row ${targetRowId + 1}. No change needed.`);
-                }
+                } 
 
-                // 4. Re-render and update URL
                 renderRows();
-                renderAwakeners(); // Crucial to update roster view (removing the unit from the list)
+                renderAwakeners(); 
                 updateUrlState();
 
             } catch (e) {
@@ -762,10 +552,6 @@
             }
         }
 
-        /**
-         * Handles the dropping of an Awakener card back into the Owned/Unowned roster area.
-         * @param {DragEvent} e
-         */
         function handleRosterDrop(e) {
             e.preventDefault();
             const listElement = e.target.closest('#owned-list, #unowned-list');
@@ -778,25 +564,19 @@
                 const awakenerName = dragData.name;
                 const sourceRowId = dragData.sourceRowId;
 
-                // 1. Remove from source (if from a row)
                 if (sourceRowId !== null) {
                     const rowId = parseInt(sourceRowId);
                     rowsState[rowId] = rowsState[rowId].filter(name => name !== awakenerName);
                 }
-                // If sourceRowId is null, the unit was dragged from the Roster back into the Roster, which is a no-op state change but may update 'owned'/'unowned' status.
 
-                // 2. Update Awakener group status based on the drop target
                 const awakener = getAwakenerByName(awakenerName);
                 if (awakener) {
                     const targetGroup = listElement.id === 'owned-list' ? 'owned' : 'unowned';
                     if (sourceRowId === null && awakener.group === targetGroup) {
-                        // Dragged from Roster A to Roster A (no state change)
                         return; 
                     }
                     awakener.group = targetGroup;
-                    console.log(`${awakenerName} moved to Roster (${targetGroup}).`);
 
-                    // 3. Re-render and update URL
                     renderRows();
                     renderAwakeners();
                     updateUrlState();
@@ -829,7 +609,6 @@
                 const rect = mainLayout.getBoundingClientRect();
                 let newWidth = e.clientX - rect.left;
                 
-                // Calculate minimum and maximum pixel widths
                 const minPxWidth = rect.width * (MIN_WIDTH_PERCENT / 100);
                 const maxPxWidth = rect.width * (1 - MIN_WIDTH_PERCENT / 100);
 
@@ -837,7 +616,7 @@
                 if (newWidth > maxPxWidth) newWidth = maxPxWidth;
 
                 rosterColumn.style.flexBasis = `${newWidth}px`;
-                rosterColumn.style.flexGrow = '0'; // Prevent growth after setting flexBasis
+                rosterColumn.style.flexGrow = '0'; 
                 rosterColumn.style.flexShrink = '0';
             });
 
@@ -867,13 +646,11 @@
 
                 let newHeight = e.clientY - ownedRect.top;
 
-                // Ensure groups maintain minimum pixel height
-                const maxNewHeight = rect.height - MIN_PX_HEIGHT - rosterSplitter.offsetHeight - 20; // 20px is for padding/gap
+                const maxNewHeight = rect.height - MIN_PX_HEIGHT - rosterSplitter.offsetHeight - 20; 
                 
                 if (newHeight < MIN_PX_HEIGHT) newHeight = MIN_PX_HEIGHT;
                 if (newHeight > maxNewHeight) newHeight = maxNewHeight;
 
-                // Calculate the percentage for persistent storage
                 ownedHeightPercentage = (newHeight / rect.height) * 100;
 
                 ownedGroup.style.flexBasis = `${newHeight}px`;
@@ -882,7 +659,6 @@
                 unownedGroup.style.minHeight = `${MIN_PX_HEIGHT}px`; 
             });
 
-            // Apply initial vertical split percentage
             const applyInitialSplit = () => {
                 const rect = rosterColumn.getBoundingClientRect();
                 if (rect.height > 0) {
@@ -892,19 +668,14 @@
                     unownedGroup.style.flexGrow = '1';
                 }
             };
-            // Use a short delay to ensure layout rendering before calculating height
             setTimeout(applyInitialSplit, 50); 
             window.addEventListener('resize', applyInitialSplit);
         }
 
         function setupEventListeners() {
-            // Roster search input
             document.getElementById('awakener-search').addEventListener('input', handleSearchInput);
-
-            // Add Row button
             document.getElementById('add-row-btn').addEventListener('click', addRow);
             
-            // Add drop targets for roster lists
             const ownedList = document.getElementById('owned-list');
             const unownedList = document.getElementById('unowned-list');
             
@@ -916,33 +687,17 @@
             });
         }
 
-        // --- INITIALIZATION ---
-
-        /**
-         * Main initialization function, ensuring correct async order.
-         */
         async function init() {
-            // 1. Load the data (must be awaited to populate awakenersData before deserialization)
             await loadAwakenersData();
-            
-            // 2. Load the state from the URL (updates rowsState and awakenersData.group)
             loadStateFromUrl();
-            
-            // 3. Render based on the loaded state
             renderRows();
             renderAwakeners();
-            
-            // 4. Setup Event Listeners and Resizers
             setupEventListeners();
             setupResizers();
-            
-            // 5. Update URL state to normalize it. This should not change the URL if deserialization was successful.
             updateUrlState(); 
-
             console.log("App initialized.");
         }
 
-        // Call init on window load to enforce the correct sequence
         window.onload = init;
     </script>
 </body>
