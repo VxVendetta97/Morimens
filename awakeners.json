@@ -212,7 +212,7 @@
             "DeathResistance": "0%"
         },
         "cards": {
-            "C1": "[Metamorphosed Body] Card Cost: 2 Caecus gains (25/30/35/40/45/50) Aliemus.Rouse: Gain 1 Tentacle. Whenever a Caecus Command Card is played, heal (3.5/4.2/4.9/5.6/6.3/7% CON) HP and gain (3.5/4.2/4.9/5.6/6.3/7% ATK) stacks of Counter.Retain.",
+            "C1": "[Metamorphosed Body] Card Cost: 2 Caecus gains (25/30/35/40/45/50) Aliemus.Rouse: Gain 1 Tentacle. Whenever a Caecus Command Card is played, heal (7/8.4/9.8/11.2/12.6/14% CON) HP and gain (7/8.4/9.8/11.2/12.6/14% ATK) stacks of Counter.Retain.",
             "C2": "[Strike] Card Cost: 1 Deal (10/12/14/16/18/20% ATK) DMG.Gain (5/6/7/8/9/10) Aliemus.",
             "C3": "[Defend] Card Cost: 1 Gain (10/12/14/16/18/20% DEF) Shield.Gain (5/6/7/8/9/10) Aliemus.",
             "C4": "[Protective Scales] Card Cost: 3 Gain (25/30/35/40/45/50% DEF) Shield.Until the start of the next turn, Counter and Tentacle Counter trigger an additional time for 50% DMG.Gain (2.5/3/3.5/4/4.5/5% ATK) STR.",
@@ -225,7 +225,7 @@
         "talents": {
             "T1": "Innate: Rebellious Spikes Talent For every 1% Sigil Yield Caecus has, his [Strike] gains an additional 1% counter damage bonus.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
-            "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Caecus's CON, ATK, and DEF stats increase by (3% per talent level).After using Caecus's Rouse, gain (50 per talent level) Keyflare."
+            "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Caecus's CON, ATK, and DEF stats increase by (3% per talent level).After using Caecus's Rouse, gain (50 per talent level) Keyflare.Caecus heals 15% (+2% per talent level) of his CON each time he plays his first Command Card per turn. The Tentacle Damage from the Counter effects of Bloodline of Heresy is boosted by 50% (+10% per talent level)."
         },
         "enlightens": {
             "E1": "[Bloodline Awaken] Enlighten 1 [Shattered Halberd]: Caecus gains (15/16/17/18/19/20) Aliemus (effect scales with skill level of [Shattered Halberd]).",
