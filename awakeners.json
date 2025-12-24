@@ -1876,21 +1876,21 @@
             "C1": "Rouse: [Voices From Beyond] Card Cost: 1 Tinct gains (25/30/35/40/45/50) Aliemus.Rouse: Base damage of Tinct's [Strike] is increased by 200%.Tinct's cards gain 1 random effect applied to them. Random effects are removed at the end of the battle. Random Effects can be the following: Gain 5 Aliemus; Apply 1 Vulnerable to all enemies; Apply 1 Weakness to all enemies; Gain 1 Arithmetica; Draw 1 card;",
             "C2": "[Strike] Card Cost: 1 Deal (10/12/14/16/18/20% ATK) DMG. (E1) Deal (10/12/14/16/18/20% ATK) DMG 2 times.Gain (5/6/7/8/9/10) Aliemus.(E1) Leap: Only do one instance of damage, but the damage is increased by 3 times.",
             "C3": "[Defend] Card Cost: 1 Gain (10/12/14/16/18/20% DEF) Shield. (E2) Gain (10/12/14/16/18/20% DEF) Shield 2 times.Gain (5/6/7/8/9/10) Aliemus.(E2) Leap: Only gain one instance of shield, but gain 2 times the Aliemus.",
-            "C4": "[Requiem] Card Cost: 2 Dispel Fragile, Weakness, and Vulnerable from self.Steal (7.5/9/10.5/12/13.5/15% ATK) Temporary Strength from all enemies.The next card played with a Leap effect will activate its Leap effect.Leap: Steal (15/18/21/24/27/30% ATK) temporary Strength from the front-row enemy instead.",
-            "C5": "[Distant Melody Swells] Card Cost: 3 Gain (50/60/70/80/90/100% DEF) Shield.Temporarily gain 15% Crit Rate next turn.Leap: Change the effect to: \"Gain (30/36/42/48/54/60% DEF) Shield and Temporarily gain 4% Crit Rate next turn.\""
+            "C4": "[Requiem] Card Cost: 2 Dispel Fragile, Weakness, and Vulnerable from self.Steal (7.5/9/10.5/12/13.5/15% ATK) Temporary Strength from all enemies.The next card played with a Leap effect will activate its Leap effect.Leap: Steal (15/19/23/27/31/35% ATK) temporary Strength from the front-row enemy instead.",
+            "C5": "[Distant Melody] Card Cost: 3 Gain (50/60/70/80/90/100% DEF) Shield.Temporarily gain 15% Crit Rate next turn.Leap: Change the effect to: \"Gain (30/36/42/48/54/60% DEF) Shield and Temporarily gain 4% Crit Rate next turn.\""
         },
         "exalt": {
             "exalt": "[Aurora] Gain (7.5/9/10.5/12/13.5/15% ATK) Strength.Temporarily gains 15% critical rate buff. (E2) Temporarily gain the same amount as Crit DMG.For this battle, Tinct's \"Strike\" Base DMG is increased by 50%.Reduce the Arithmetica cost of 5 random cards in hand by 1 until the end of the turn.",
             "over_exalt": "[Cosmic Symphony] Set the Arithmetica cost of 5 random cards in hand to 0 until the end of the turn."
         },
         "talents": {
-            "T1": "Innate: Planetary Traveler Talent For each 1% of Sigil Yield Tinct has, [Aurora] gains an additional 0.15% Temporary Crit Rate.",
+            "T1": "Innate: Planetary Traveler Talent For each 1% of Sigil Yield Tinct and her equipped WoD & Covenant have, [Aurora] gains an additional 0.15% Temporary Crit Rate.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
-            "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Tinct's CON, ATK, and DEF stats increase by (3% per talent level).After using Tinct's Rouse, gain (50 per talent level) Keyflare."
+            "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Tinct's CON, ATK, and DEF stats increase by (3% per talent level).After using Tinct's Rouse, gain (50 per talent level) Keyflare.After playing [Distant Melody], temporarily reduces the damage dealt by all Humanoid enemies by 10%(+1% per talent level), not stackable. Each time [Requiem] dispels a negative state, gain 5(+1 per talent level) points of Aliemus."
         },
         "enlightens": {
-            "E1": "[Stellar Reverberation] Enlighten 1 \"Strike\" gains an additional damage instance. Gain Leap effect.Leap: Deal one instance of 3x DMG.",
-            "E2": "[Midnight Elegy] Enlighten 2 \"Defense\" gains an additional Shield instance. Gain Leap effect.Leap: Only gain 1 Shield instance, but doubles Aliemus gain.",
+            "E1": "[Stellar Reverberation] Enlighten 1 \"Strike\" gains an additional damage instance. Gain Leap effect.Leap: Deal DMG 3 times",
+            "E2": "[Midnight Elegy] Enlighten 2 \"Defense\" gains an additional Shield instance. Gain Leap effect.Leap: Gain double Aliemus.",
             "E3": "[Falling Skyward] Enlighten 3 \"Distant Melody Swells\" and \"Aurora\" gain Crit DMG equivalent to Crit Rate gained."
         }
     },
@@ -1977,9 +1977,9 @@
         "faction": "ULTRA",
         "type": "DEFENSE",
         "stats": {
-            "CON": "140",
-            "ATK": "88",
-            "DEF": "164",
+            "CON": "158",
+            "ATK": "99",
+            "DEF": "185",
             "CritRate": "5%",
             "CritDamage": "50%",
             "AliemusRegen": "0",
@@ -1993,17 +1993,17 @@
             "C1": "Rouse: [Living Dead's Delirium] Card Cost: 1 Wanda gains (25/30/35/40/45/50) Aliemus.Rouse: Immediately gain 5 stacks of Dreamlure. Gain 1 stack of Dreamlure each turn.Whenever gaining Dreamlure brings it to 5 or 10 stacks, gain (10/12/14/16/18/20% DEF) Shield.Retain.",
             "C2": "[Strike] Card Cost: 1 Deal (10/12/14/16/18/20% ATK) DMG.Gain (5/6/7/8/9/10) Aliemus.Leap: Obtain 1 stack of Dreamlure.",
             "C3": "[Defend] Card Cost: 1 Gain (10/12/14/16/18/20% DEF) Shield.Gain (5/6/7/8/9/10) Aliemus.Leap: Obtain 1 stack of Dreamlure.",
-            "C4": "[Keeper of the Lost] Card Cost: 4 Obtain (25/30/35/40/45/50% ATK) stacks of Counter.Reduce all enemies Strength by (12/14.4/16.8/19.2/21.6/24% DEF) for 1 turn. Reduction effect is doubled if there is only one enemy.Leap: Consume 5 stacks of Dreamlure if at or above 5 stacks. If Dreamlure is consumed, gain an additional (25/30/35/40/45/50% ATK) stacks of Counter. If Dreamlure was less than 5, gain 2 stacks of Dreamlure.",
-            "C5": "[Spine Needle Chain] Card Cost: 3 Deal (25/30/30/35/40/45/50% ATK) DMG 5 times (each hit selects a random available target).Damage is increased by (15/16/17/18/19/20)% of Counter stacks.Each damage instance reduces the target's Strength by (1/1.2/1.4/1.6/1.8/2% DEF).Leap: Consume 5 stacks of Dreamlure if at or above 5 stacks. If Dreamlure is consumed, refund consumed Arithmetica cost. If Dreamlure was less than 5, gain 2 stacks of Dreamlure."
+            "C4": "[Keeper of the Lost] Card Cost: 4 Obtain (25/30/35/40/45/50% ATK) stacks of Counter.Reduce all enemies Strength by (18/21.6/25.2/28.8/32.4/36% DEF) for 1 turn. Reduction effect is increased by 50% if there is only one enemy.Leap: Consume 5 stacks of Dreamlure if at or above 5 stacks. If Dreamlure is consumed, gain an additional (30/36/42/48/54/60% ATK) stacks of Counter. If Dreamlure was less than 5, gain 2 stacks of Dreamlure.",
+            "C5": "[Spine Needle Chain] Card Cost: 3 Deal (25/30/30/35/40/45/50% ATK) DMG 5 times (each hit selects a random available target).Damage is increased by (15/16/17/18/19/20)% of Counter stacks.Each damage instance reduces the target's Strength by (1.25/1.5/1.75/2/2.25/2.5% DEF).Leap: Consume 5 stacks of Dreamlure if at or above 5 stacks. If Dreamlure is consumed, refund consumed Arithmetica cost and deal 2 more istances of DMG. If Dreamlure was less than 5, gain 2 stacks of Dreamlure."
         },
         "exalt": {
             "exalt": "[Necropolis of Dreams] Gain (25/30/35/40/45/50% DEF) Shield.Gain (30/36/42/48/54/60% ATK) stacks of Counter.The next card played this turn with a Leap effect has it's Leap Effects forcibly activated.You can choose to consume Dreamlure stacks to trigger Slumber Counter or Echoes of Whispers. If you have less than 5 stacks of Dreamlure, activate Hypnotic Veins automatically.Hypnotic Veins: Consumes 0 stacks of Dreamlure. Gain 1 stack of Dreamlure.Slumber Counter: Consume 5 stacks of Dreamlure. Gain (10/11/12/13/14/15) Aliemus. Gain Temporary Counter equal to (35/38/41/44/47/50)% of permanent Counter. (E2) Gain an additional 15 Aliemus.Echoes of Whispers: Consume 10 stacks of Dreamlure. Apply \"Murmur\" state to all enemies for 1 round (reduces damage dealt by 60%, but number of attacks is doubled). (E2) Additionally reduces damage dealt by 5% (65% total).",
             "over_exalt": "[Lost Dream's Guide] No longer consumes Dreamlure. Simultaneously triggers \"Hypnotic Veins\", \"Slumber Counter\", and \"Echoes of Whispers\"."
         },
         "talents": {
-            "T1": "Innate: Revelation Talent At the start of turn, gain 1 stack of Dreamlure. Dreamlure can stack up to a maximum of 10.For every 1 stack of Dreamlure consumed, increase the Counter gained by [Keeper of the Lost] and [Necropolis of Dreams] by 5% ATK in this battle.For every 1% DMG Amplification Wanda has, increase the Counter gained by [Necropolis of Dreams] by 0.75%.",
+            "T1": "Innate: Revelation Talent At the start of turn, gain 1 stack of Dreamlure. Dreamlure can stack up to a maximum of 10.For every 1 stack of Dreamlure consumed, increase the Counter gained by [Keeper of the Lost] and [Necropolis of Dreams] by 5% ATK in this battle.For every 1% DMG Amplification Wanda and her equipped WoD & Covenant have, increase the Counter gained by [Necropolis of Dreams] by 0.75%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
-            "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Wanda's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Wanda's Rouse, gain (50 per talent level) Keyflare."
+            "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Wanda's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Wanda's Rouse, gain (50 per talent level) Keyflare.All Awakeners' STR▼ effect increased by 5%(+1% per talent level)"
         },
         "enlightens": {
             "E1": "[The Revelation] Enlighten 1 [Spine Needle Chains] - Has 25% increased critical rate.[Keeper of the Lost] - Base Counter gained is increased by 15%.",
@@ -2029,7 +2029,7 @@
             "DeathResistance": "0%"
         },
         "cards": {
-            "C1": "Rouse: [Self-Imprisonment] Card Cost: 2 Winkle gains (25/30/35/40/45/50) Aliemus.Rouse: After Winkle plays a card, they obtain 5 Aliemus and (7.5/9/10.5/12/13.5/15% ATK) stacks of Counter.Retain.",
+            "C1": "Rouse: [Self-Imprisonment] Card Cost: 2 Winkle gains (25/30/35/40/45/50) Aliemus.Rouse: After Winkle plays a card, they obtain 5 Aliemus and (7.5/9/10.5/12/13.5/15% ATK) stacks of Counter.Increases the Shield and Counter provided by Winkle by an additional 10%.Retain.",
             "C2": "[Strike] Card Cost: 1 Deal (10/12/14/16/18/20% ATK) DMG.Gain (5/6/7/8/9/10) Aliemus.(E1) The damage dealt benefits from a 25% Counter Buff.",
             "C3": "[Defence] Card Cost: 1 Gain (10/12/14/16/18/20% DEF) Shield.Gain (5/6/7/8/9/10) Aliemus.",
             "C4": "[Energy Beam] Card Cost: 2 Remove all enemy Barrier states.Deal damage equal to (15/18/21/24/27/30% ATK) to all enemies.Apply 1 turn of Weakness to all enemies.Gain (150/160/170/180/190/200) S-Energy.Leap: Instead of S-Energy, gain (15/16/17/18/19/20) Aliemus instead.(E1) The damage dealt benefits from a 25% Counter Buff.",
@@ -2042,7 +2042,7 @@
         "talents": {
             "T1": "Innate: None Talent",
             "T2": "Madness Omen Talent Max level: 12 Obtain (5 per talent level) Aliemus after the start of exploration.",
-            "T3": "Soul Shaping Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Winkle's CON, ATK, and DEF are increased by (3% per talent level).After the first time using Winkle's Rouse, gain (50 per talent level) Keyflare."
+            "T3": "Soul Shaping Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Winkle's CON, ATK, and DEF are increased by (3% per talent level).After the first time using Winkle's Rouse, gain (50 per talent level) Keyflare.After unleashing Annihilation, Winkle gains 10(+2 per talent level) points of Aliemus, with a cooldown of 3 turns"
         },
         "enlightens": {
             "E1": "[Dread of the Darkness] Enlighten 1 \"Basic Strike\" and \"Energy Beam\" DMG receives a 25% Counter Buff.",
