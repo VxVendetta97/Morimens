@@ -435,9 +435,9 @@
         "faction": "ULTRA",
         "type": "ATTACK",
         "stats": {
-            "CON": "124(+1.55)*",
-            "ATK": "156(+1.95)*",
-            "DEF": "116(+1.45)*",
+            "CON": "140",
+            "ATK": "176",
+            "DEF": "131",
             "CritRate": "5%",
             "CritDamage": "64.4%(+2.4%)*",
             "AliemusRegen": "0",
@@ -554,9 +554,9 @@
         "faction": "ULTRA",
         "type": "DEFENSE",
         "stats": {
-            "CON": "148(1.85)*",
-            "ATK": "144(1.8)*",
-            "DEF": "144(1.8)*",
+            "CON": "148",
+            "ATK": "144",
+            "DEF": "144",
             "CritRate": "5%",
             "CritDamage": "50%",
             "AliemusRegen": "0",
@@ -579,7 +579,7 @@
             "over_exalt": "[Multiple Calculations] Base DMG and shield is increased by 50%.For 3 turns, Erica's [Strike] gains an additional damage instance, and Erica's [Defend] gains an additional shield instance."
         },
         "talents": {
-            "T1": "Innate: External Power Source Talent For every 1 point of Keyflare Regen Erica has, [Electromagnetic Blast] grants Erica 0.5% Temporary Crit Rate and Crit DMG.",
+            "T1": "Innate: External Power Source Talent For every 1 point of Keyflare Regen Erica and her equipped WoD & Covenant have, [Electromagnetic Blast] grants Erica 0.5% Temporary Crit Rate and Crit DMG.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Erica's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Erica's Rouse, gain (50 per talent level) Keyflare.At the start of battle, gain STR equal to 5% (+1% per talent level) of Erica's ATK and Alert equal to 1% (+0.2% per talent level) of Erica's DEF."
         },
@@ -911,9 +911,9 @@
         "faction": "ULTRA",
         "type": "ASSIST",
         "stats": {
-            "CON": "92",
-            "ATK": "96",
-            "DEF": "84",
+            "CON": "104",
+            "ATK": "108",
+            "DEF": "95",
             "CritRate": "5%",
             "CritDamage": "50%",
             "AliemusRegen": "3(+0.4)*",
@@ -935,9 +935,9 @@
             "over_exalt": "[Ink-Stained Sonnet] The effect corresponding to \"Resplendent Chapters\" increases 600%.Gain 3 stacks of universal Metaphor, which can be treated as a Metaphor of any emotion and are consumed first the next time Horla's Command Card activates its Leap effect."
         },
         "talents": {
-            "T1": "Innate: Writing with Feeling Talent When Horla activates a Leap effect with her Command Card, her Emotion changes to the corresponding Emotion associated with that card. Each Emotion has a team-wide buff that is active while Horla remains in that emotion. Each Emotion's effects will be listed under their associated Command Card. Anger: Associated with \"Threnody of Delirium\". Grief: Associated with \"Threnody of Sorrow\". Happiness: Associated with \"Threnody of Dreams\". Fear: Associated with \"Threnody of Shadows\".For every 1% of Death Resistance Horla has, the initial values of the bonus effect from these Emotions is increased by 0.1%.",
+            "T1": "Innate: Writing with Feeling Talent When Horla activates a Leap effect with her Command Card, her Emotion changes to the corresponding Emotion associated with that card. Each Emotion has a team-wide buff that is active while Horla remains in that emotion. Each Emotion's effects will be listed under their associated Command Card. Anger: Associated with \"Threnody of Delirium\". Grief: Associated with \"Threnody of Sorrow\". Happiness: Associated with \"Threnody of Dreams\". Fear: Associated with \"Threnody of Shadows\".For every 1% of Death Resistance Horla and her equipped WoD & Covenant have, the initial values of the bonus effect from these Emotions is increased by 0.1%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
-            "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Horla's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Horla's Rouse, gain (50 per talent level) Keyflare."
+            "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Horla's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Horla's Rouse, gain (50 per talent level) Keyflare.At the start of the boss battle, gain Death Resistance equal to 5%(+1% per talent level) of Horla's and her equipped WoD & Covenant Death Resistance attribute. Each time Death Resistance is triggered, the corresponding effect of Resplendent Chapters increases by 50%(+10% per talent level) until the end of the turn."
         },
         "enlightens": {
             "E1": "[Emberbound] Enlighten 1 \"Threnody of Delirium\" applies 1 Vulnerable to all enemies. \"Threnody of Sorrow\" applies 1 Weakness to all enemies.",
@@ -963,7 +963,7 @@
             "DeathResistance": "0%"
         },
         "cards": {
-            "C1": "Rouse: [Spatial Fold] Card Cost: 2 Jenkins gains (25/30/35/40/45/50) Aliemus.Rouse: Critical Rate is increased by 25%. For every damage instance Jenkins deals, Temporary Crit DMG +15%, stacking up to 5 times per turn. Retain.",
+            "C1": "Rouse: [Spatial Fold] Card Cost: 2 Jenkins gains (25/30/35/40/45/50) Aliemus.Rouse: The Team Critical Rate is increased by 25%. For every damage instance Jenkins deals, Temporary Crit DMG +15%, stacking up to 5 times per turn. Retain.",
             "C2": "[Strike] Card Cost: 1 Deal (10/12/14/16/18/20% ATK) DMG.Gain (5/6/7/8/9/10) Aliemus.",
             "C3": "[Defend] Card Cost: 1 Gain (10/12/14/16/18/20% DEF) Shield.Gain (5/6/7/8/9/10) Aliemus.(E2) Draw 2 cards; if they are not Jenkin's, discard them.",
             "C4": "[Mice Assemble] Card Cost: X Shuffle 1 \"Swarm Impact\" into the top of your Draw Pile that deals (25/30/35/40/45/50% ATK) DMG to random targets X+4 times.Leap: Shuffle 1 \"Get 'em! Brown!\" to the top of your Draw Pile.",
@@ -975,7 +975,7 @@
             "over_exalt": "[Gotcha!] Adds 1 \"Ultimate Assemble!\" to your hand with Exhaust."
         },
         "talents": {
-            "T1": "Innate: A Common Enemy Talent For every 1% Crit Rate Jenkins has, the Base DMG of \"Strike\" and \"Get 'em! Brown!\" is increased by 2%.",
+            "T1": "Innate: A Common Enemy Talent For every 1% Crit Rate Jenkins and her equipped WoD & Covenant have, the Base DMG of \"Strike\" and \"Get 'em! Brown!\" is increased by 2%.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
             "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Jenkins's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Jenkins's Rouse, gain (50 per talent level) Keyflare.The first 10 \"Get 'em! Brown!\" cards played each round will not count towards Arithmetica Harmony.Jenkins' DMG is increased by 20(+4 per talent level)% of her ATK."
         },
@@ -1544,9 +1544,9 @@
         "faction": "ULTRA",
         "type": "ATTACK",
         "stats": {
-            "CON": "124",
-            "ATK": "140",
-            "DEF": "120",
+            "CON": "140",
+            "ATK": "158",
+            "DEF": "135",
             "CritRate": "14.6%(+1.6%)*",
             "CritDamage": "50%",
             "AliemusRegen": "0",
@@ -1565,12 +1565,12 @@
         },
         "exalt": {
             "exalt": "[Sinless Virdict] Deal (150/180/210/240/270/300% ATK) DMG to all enemies. Pollux's next played Command Card this turn activates his [Atonement by Pain] passive effect. Create 1 [Sacred Heart] and add it to your hand.",
-            "over_exalt": "[The Nightbreaker] For the rest of this turn, Pollux's Command Cards benefit from 50% of his [Atonement by Pain] passive effect. Pollux's next played Command Card takes effect 1 additional time."
+            "over_exalt": "[The Nightbreaker] For the rest of this turn, Pollux's Command Cards benefit from 50% of his [Atonement by Pain] passive effect.Draw 1 [Sacred Heart].Pollux's next played Command Card takes effect 1 additional time."
         },
         "talents": {
             "T1": "Innate: Atonement by Pain Talent Max level: 1 Pollux's first Command Card played each turn gains a DMG boost equal to 200% of its ATK and a Shield boost equal to 50% of its DEF. Also gain 10 Aliemus. At the end of battle, Pollux's Base DMG and the DMG boost effect of [Atonement by Pain] are increased by 20% for the rest of the exploration. The DMG bonus effect is doubled during a Boss Battle.",
             "T2": "Madness Omen Talent Max level: 12 Gain (5 per talent level) Aliemus at the start of exploration.",
-            "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Pollux's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Pollux's Rouse, gain (50 per talent level) Keyflare.The DMG bonus effect from [Atonement by Pain\" is increased by 50% of Pollux's ATK.After gaining 50 stacks of Sin Mark, create 1 [Sacred Heart] and add it to your hand.After gaining 100 stacks of Sin Mark, [Sacred Heart] gains a new effect: when Exhausted, draw 1 of either [Soulsearing Light] or [Cleansing Judgment].The effect of Sin Mark is doubled against enemies who are \"Church of the Lightbearers\"."
+            "T3": "Soulforge Aptitude Talent Max level: 10 This talent is only effective in \"Astral Reign\" stages.Pollux's CON, ATK, and DEF stats increase by (3% per talent level).After the first time using Pollux's Rouse, gain (50 per talent level) Keyflare.The DMG bonus effect from [Atonement by Pain\" is increased by 50%(+10% per talent level) of Pollux's ATK.After gaining 50 stacks of Sin Mark, create 1 [Sacred Heart] and add it to your hand.After gaining 100 stacks of Sin Mark, [Sacred Heart] gains a new effect: when Exhausted, draw 1 of either [Soulsearing Light] or [Cleansing Judgment].The effect of Sin Mark is doubled against enemies who are \"Church of the Lightbearers\"."
         },
         "enlightens": {
             "E1": "[Lightbearer's Herald] Enlighten 1 At the start of each battle, add 1 \"Sacred Heart\" to your hand.",
